@@ -11,14 +11,20 @@
 	<packaging>jar</packaging>
 	<name>${project.artifactId}</name>
 	<description>XSL for Apache Hive</description>
-	<url>https://github.com/to_be_replaced</url>
+	<url>https://github.com/jameskrobinson/hive-xsl-udtf/wiki/Hive-XSL-UDTF-Home</url>
 
-	<!--
-	<scm>
+	<scm-orig>
 		<connection>scm:git:git@github.com:CyberAgent/hive-jq-udtf.git</connection>
 		<developerConnection>scm:git:git@github.com:CyberAgent/hive-jq-udtf.git</developerConnection>
 		<url>git@github.com:CyberAgent/hive-jq-udtf.git</url>
+	</scm-orig>
+		
+	<scm>
+		<connection>scm:git:git@github.com:jameskrobinson/hive-xsl-udtf.git</connection>
+		<developerConnection>scm:git:git@github.com:jameskrobinson/hive-xsl-udtf.git</developerConnection>
+		<url>git@github.com:jameskrobinson/hive-xsl-udtf.git</url>
 	</scm>
+
 
 	<developers>
 		<developer>
@@ -27,8 +33,12 @@
 			<organization>CyberAgent, Inc.</organization>
 			<organizationUrl>https://www.cyberagent.co.jp/en/</organizationUrl>
 		</developer>
+		<developer>
+			<name>James Robinson</name>			
+		</developer>
+
 	</developers>
-	-->
+	
 	<licenses>
 		<license>
 			<name>Apache License, Version 2.0</name>

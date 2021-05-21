@@ -1,0 +1,1486 @@
+<SWAP>
+	<TradeId>123456LQ</TradeId>
+	<TradeType>SWAP</TradeType>
+	<Env TYPE="EntList" SINGLE="Y">
+		<ENV>
+			<Audit_Id>00001234</Audit_Id>
+			<Audit_Table>SWAP</Audit_Table>
+			<Audit_Version TYPE="Numeric">58</Audit_Version>
+			<Audit_Current>Y</Audit_Current>
+			<Audit_EntityState>VER</Audit_EntityState>
+			<Audit_Authorized>Y</Audit_Authorized>
+			<Audit_PendingAction/>
+			<Audit_PendingState/>
+			<Audit_IsHistory>N</Audit_IsHistory>
+			<Audit_User>robinsoj</Audit_User>
+			<Audit_Action>ACCEPT</Audit_Action>
+			<Audit_DateTime>20070604 13:00:05</Audit_DateTime>
+			<Audit_ExtStateName>Verified</Audit_ExtStateName>
+			<Audit_StateId TYPE="Numeric"/>
+			<dmOwnerTable>SWAP</dmOwnerTable>
+			<TradeId>123456LQ</TradeId>
+			<InputDate>20000128</InputDate>
+			<InputTime>15:02:46</InputTime>
+			<Cust>DUMMY</Cust>
+			<Company>LQBANK</Company>
+			<BookedBy/>
+			<BookedFor/>
+			<BookSpr TYPE="Numeric"/>
+			<BookCcy/>
+			<BookFee TYPE="Numeric"/>
+			<BookFeeDate/>
+			<RC/>
+			<Book>LQBOOK</Book>
+			<RCSpread TYPE="Numeric"/>
+			<Trader>JAMES</Trader>
+			<Broker>NOBROKER</Broker>
+			<Contact/>
+			<Desk>RATES</Desk>
+			<Folder>RPIRATES</Folder>
+			<DealId/>
+			<TradeDate>19991220</TradeDate>
+			<TradeStatus>VER</TradeStatus>
+			<RCTrade>N</RCTrade>
+			<ProductGroup>RPI</ProductGroup>
+			<ProductType>IRS</ProductType>
+			<BackDated>Y</BackDated>
+			<FinalMaturity/>
+			<ProjectId/>
+			<IsMirror>N</IsMirror>
+			<PayMethod/>
+			<Comment1>REC LEG RPI BASED FOR PAYMENTS 01/06/01 - 01/03/02</Comment1>
+			<Comment2>REC LEG RPI BASED FOR PAYMENTS 01/06/01 - 01/03/02</Comment2>
+			<LastUpdate>20070604 13:31:05</LastUpdate>
+			<MarketerId>NOMKTR</MarketerId>
+			<NumSSI TYPE="Numeric"/>
+			<MirrorSchemeId/>
+			<StructureId/>
+			<ViewName/>
+			<FacilityId/>
+			<TrancheId/>
+			<LoanId/>
+			<LFType/>
+			<LoanCcy/>
+			<ParentOwnerTable/>
+			<ParentTradeId/>
+			<SyndicatedLoan>N</SyndicatedLoan>
+			<Breakable>Y</Breakable>
+			<SsiInstr TYPE="EntList" SINGLE="N"/>
+			<UltBeneficiary/>
+			<CreditRisk>N</CreditRisk>
+			<TradeEntryDate>19991220</TradeEntryDate>
+			<SIProductID/>
+		</ENV>
+	</Env>
+	<Back TYPE="EntList" SINGLE="Y">
+		<BACK>
+			<dmOwnerTable>SWAP</dmOwnerTable>
+			<TradeId>123456LQ</TradeId>
+			<ExtTradeId>SW33445</ExtTradeId>
+			<SummitId/>
+			<OldId/>
+			<Code/>
+			<PendingUser>NA</PendingUser>
+			<PendingDate>19991220</PendingDate>
+			<PendingTime>00:00:00</PendingTime>
+			<DoneUser>robinsoa</DoneUser>
+			<DoneDate>19991220</DoneDate>
+			<DoneTime>00:00:00</DoneTime>
+			<VerifyUser>svcsummit</VerifyUser>
+			<VerifyDate>20000128</VerifyDate>
+			<VerifyTime>00:00:00</VerifyTime>
+			<CancelUser/>
+			<CancelDate/>
+			<CancelTime>00:00:00</CancelTime>
+			<AmendUser>robinsoj</AmendUser>
+			<AmendDate>20070604</AmendDate>
+			<AmendTime>20070604 13:00:00</AmendTime>
+			<ConfirmExec>N</ConfirmExec>
+			<CollateralHeld>N</CollateralHeld>
+			<CollateralAmt TYPE="Numeric"/>
+			<TermTradeDate/>
+			<TermEffDate/>
+			<TermInputDate/>
+			<OrigMatDate/>
+			<OrigNotional TYPE="Numeric"/>
+			<Street/>
+			<NetSettle>Y</NetSettle>
+			<TermAssignStatus/>
+			<SchemaId>LQ_MTM_IRS</SchemaId>
+			<TrAcctType>TRADING</TrAcctType>
+			<CommonRef>BLING</CommonRef>
+			<AssignTo/>
+			<AssignFrom/>
+			<Audit_Version TYPE="Numeric">58</Audit_Version>
+			<TradeNetting>N</TradeNetting>
+			<ThresholdCcy/>
+			<ThresholdAmount TYPE="Numeric"/>
+			<ExerciseTo/>
+			<ExerciseOwnerTable/>
+			<SecId/>
+			<SecType/>
+			<SecCcy/>
+			<MergeTradeId/>
+			<EuroConversionDate>     SUN</EuroConversionDate>
+			<OurSettlementCountry/>
+			<CustSettlementCountry/>
+			<PositionType/>
+			<NetSettlement/>
+			<NetCredit/>
+			<MAFormat/>
+			<MAStyle/>
+			<ExternalUser/>
+			<ExtSystem/>
+			<SSIOpsCode/>
+			<ContOpsCode/>
+			<NavOpsCode/>
+			<AggressorFlag/>
+			<MatchingId/>
+			<OrigEffectDate/>
+			<ExtVersion TYPE="Numeric"/>
+			<SsiByEvent>N</SsiByEvent>
+			<CLSSettlement>N</CLSSettlement>
+			<CSD/>
+			<CSD_AuditId/>
+			<MirrorData TYPE="EntList" SINGLE="Y"/>
+		</BACK>
+	</Back>
+	<TrSsiPairs TYPE="EntList" SINGLE="N"/>
+	<Assets TYPE="EntList" SINGLE="N">
+		<ASSET>
+			<dmAssetId>00045678</dmAssetId>
+			<dmOwnerTable>SWAP</dmOwnerTable>
+			<TradeId>123456LQ</TradeId>
+			<SchedEvents TYPE="EntList" SINGLE="N"/>
+			<Type>SWAP</Type>
+			<SubType>IRSWAP</SubType>
+			<RC>TBC</RC>
+			<Book>LQBOOK</Book>
+			<PorS>P</PorS>
+			<EffDate>20010301</EffDate>
+			<MatDate>20080301</MatDate>
+			<Notional TYPE="Numeric">3457500.0</Notional>
+			<NotExp/>
+			<Ccy>GBP</Ccy>
+			<STUB_Date1/>
+			<STUB_Rate1 TYPE="Numeric">0.0</STUB_Rate1>
+			<STUB_Date2/>
+			<STUB_Rate2 TYPE="Numeric">0.0</STUB_Rate2>
+			<STUB_StubType/>
+			<STUB_Decomp>Y</STUB_Decomp>
+			<STUB_CompMode/>
+			<STUB_Rounding TYPE="Numeric"/>
+			<STUB_InterpStyle>E</STUB_InterpStyle>
+			<STUB_StartTerm1/>
+			<STUB_StartTerm2/>
+			<STUB_EndTerm1/>
+			<STUB_EndTerm2/>
+			<ResetInStub>N</ResetInStub>
+			<INTEREST_IndexForm/>
+			<INTEREST_YldFreq/>
+			<INTEREST_FixFloat>FLO</INTEREST_FixFloat>
+			<INTEREST_Rate TYPE="Numeric">0.0</INTEREST_Rate>
+			<INTEREST_Basis>30/360</INTEREST_Basis>
+			<INTEREST_dmIndex>FORM</INTEREST_dmIndex>
+			<INTEREST_Ccy>GBP</INTEREST_Ccy>
+			<INT_REF_OrgSource/>
+			<INT_REF_Source>UKRPIBBG</INT_REF_Source>
+			<INT_REF_NNearBy TYPE="Numeric">-200000</INT_REF_NNearBy>
+			<INTEREST_Spread TYPE="Numeric">0.0</INTEREST_Spread>
+			<INTEREST_Term/>
+			<INT_AVG_Type/>
+			<INT_AVG_Freq/>
+			<INT_AVG_Compound>N</INT_AVG_Compound>
+			<INT_AVG_AnnDay TYPE="Numeric">-200000</INT_AVG_AnnDay>
+			<INT_AVG_Rule>MF</INT_AVG_Rule>
+			<INT_AVG_Spread/>
+			<INT_AVG_Time/>
+			<INT_AVG_CutOffDays TYPE="Numeric"/>
+			<INT_AVG_CorBGap>B</INT_AVG_CorBGap>
+			<INTEREST_DType/>
+			<INTEREST_Round/>
+			<INTEREST_RoundDP TYPE="Numeric">-200000</INTEREST_RoundDP>
+			<INT_RES_Rule/>
+			<INT_RES_Time/>
+			<INT_RES_Round/>
+			<INT_RES_RoundDP TYPE="Numeric"/>
+			<INT_RES_NTL_REF_OrgSource/>
+			<INT_RES_NTL_REF_Source/>
+			<INT_RES_NTL_REF_NNearBy TYPE="Numeric">-200000</INT_RES_NTL_REF_NNearBy>
+			<INT_RES_NTL_Cal/>
+			<INT_RES_NTL_Term/>
+			<INT_RES_FX_REF_OrgSource/>
+			<INT_RES_FX_REF_Source/>
+			<INT_RES_FX_REF_NNearBy TYPE="Numeric">-200000</INT_RES_FX_REF_NNearBy>
+			<INT_RES_FX_Cal/>
+			<INT_RES_FX_Term/>
+			<INT_RES_FxDomain/>
+			<INT_ACC_AccCalc>N</INT_ACC_AccCalc>
+			<INT_ACC_Method/>
+			<INT_ACC_ForL/>
+			<INT_ACC_Basis>PRICE</INT_ACC_Basis>
+			<INTEREST_FwdDecomp>Y</INTEREST_FwdDecomp>
+			<INT_DIV_Ratio TYPE="Numeric">0.0</INT_DIV_Ratio>
+			<INT_DIV_ReInvest>N</INT_DIV_ReInvest>
+			<INT_DIV_DivMethod/>
+			<INTEREST_NRate TYPE="Numeric">0.0</INTEREST_NRate>
+			<INTEREST_NonContig>N</INTEREST_NonContig>
+			<INTEREST_UnderIndex>RPI</INTEREST_UnderIndex>
+			<SCHED_Pay_Freq>Q</SCHED_Pay_Freq>
+			<SCHED_Pay_AnnDay TYPE="Numeric">1</SCHED_Pay_AnnDay>
+			<SCHED_Pay_Rule>MF</SCHED_Pay_Rule>
+			<SCHED_Pay_IntRule>N</SCHED_Pay_IntRule>
+			<SCHED_Pay_Time>ARR</SCHED_Pay_Time>
+			<SCHED_Pay_Cal>012</SCHED_Pay_Cal>
+			<SCHED_Pay_DRule/>
+			<SCHED_Reset_Freq>Q</SCHED_Reset_Freq>
+			<SCHED_Reset_AnnDay TYPE="Numeric">1</SCHED_Reset_AnnDay>
+			<SCHED_Reset_Rule>MF</SCHED_Reset_Rule>
+			<SCHED_Reset_IntRule>N</SCHED_Reset_IntRule>
+			<SCHED_Reset_Time>ADV</SCHED_Reset_Time>
+			<SCHED_Reset_Cal>LON</SCHED_Reset_Cal>
+			<SCHED_Reset_DRule/>
+			<COMP_CompFreq/>
+			<COMP_Mode/>
+			<AMORT_Type/>
+			<AMORT_Amount TYPE="Numeric"/>
+			<AMORT_Start/>
+			<AMORT_End/>
+			<AMORT_Freq/>
+			<Custom>CUST</Custom>
+			<CROSS_CCY_NotExch/>
+			<CROSS_CCY_ForexRate TYPE="Numeric">0.0</CROSS_CCY_ForexRate>
+			<OptionData>N</OptionData>
+			<PModel/>
+			<Style/>
+			<OPForm/>
+			<SubIndex/>
+			<TermDate/>
+			<ROLL_RollNature/>
+			<ROLL_NoticeDays TYPE="Numeric">-200000</ROLL_NoticeDays>
+			<ROLL_ReInvestAmt/>
+			<FstCpEffect/>
+			<NextFixing>20070903</NextFixing>
+			<RiskId/>
+			<INT_AVG_Conversion/>
+			<INT_RES_RefixMode>MAN</INT_RES_RefixMode>
+			<INT_AVG_CutOffMeth/>
+			<Audit_Version TYPE="Numeric">58</Audit_Version>
+			<AMORT_NtlForm/>
+			<AMORT_Sched_Freq/>
+			<AMORT_Sched_AnnDay TYPE="Numeric">-200000</AMORT_Sched_AnnDay>
+			<AMORT_Sched_Rule/>
+			<AMORT_Sched_IntRule/>
+			<AMORT_Sched_Time/>
+			<AMORT_Sched_Cal/>
+			<AMORT_Sched_DRuleID/>
+			<INTEREST_FundIndex/>
+			<INTEREST_FundSprd TYPE="Numeric">0.0</INTEREST_FundSprd>
+			<MMType/>
+			<LegRole>ALL</LegRole>
+			<GroupNum TYPE="Numeric">-200000</GroupNum>
+			<NumEve TYPE="Numeric">57</NumEve>
+			<Formula TYPE="EntList" SINGLE="N">
+				<FORMULA>
+					<Date>20010301</Date>
+					<FormulaId/>
+					<Formula TYPE="ObjRef">( RPI_RATE_FORM ( [1mGBPrpi], 20010430 ) / 1.526 - 1 )</Formula>
+					<RedempType/>
+				</FORMULA>
+				<FORMULA>
+					<Date>20020301</Date>
+					<FormulaId/>
+					<Formula TYPE="ObjRef">( RPI_RATE_FORM ( [1mGBPrpi], 20020430 ) / 1.526 - 1 )</Formula>
+					<RedempType/>
+				</FORMULA>
+				<FORMULA>
+					<Date>20030301</Date>
+					<FormulaId/>
+					<Formula TYPE="ObjRef">( RPI_RATE_FORM ( [1mGBPrpi], 20030430 ) / 1.526 - 1 )</Formula>
+					<RedempType/>
+				</FORMULA>
+				<FORMULA>
+					<Date>20040301</Date>
+					<FormulaId/>
+					<Formula TYPE="ObjRef">( RPI_RATE_FORM ( [1mGBPrpi], 20040430 ) / 1.526 - 1 )</Formula>
+					<RedempType/>
+				</FORMULA>
+				<FORMULA>
+					<Date>20050301</Date>
+					<FormulaId/>
+					<Formula TYPE="ObjRef">( RPI_RATE_FORM ( [1mGBPrpi], 20050430 ) / 1.526 - 1 )</Formula>
+					<RedempType/>
+				</FORMULA>
+				<FORMULA>
+					<Date>20060301</Date>
+					<FormulaId/>
+					<Formula TYPE="ObjRef">( RPI_RATE_FORM ( [1mGBPrpi], 20060430 ) / 1.526 - 1 )</Formula>
+					<RedempType/>
+				</FORMULA>
+				<FORMULA>
+					<Date>20070301</Date>
+					<FormulaId/>
+					<Formula TYPE="ObjRef">( RPI_RATE_FORM ( [1mGBPrpi], 20070430 ) / 1.526 - 1 )</Formula>
+					<RedempType/>
+				</FORMULA>
+			</Formula>
+			<Events TYPE="EntList" SINGLE="N">
+				<EVENT>
+					<Date>20010301</Date>
+					<ADate>20010301</ADate>
+					<LinkEv TYPE="Numeric"/>
+					<Type>NTL</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">-3457500.0</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric"/>
+					<BDate>     SUN</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20010301</Date>
+					<ADate/>
+					<LinkEv TYPE="Numeric"/>
+					<Type>OFF</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">0.0</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric"/>
+					<BDate>     SUN</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20010301</Date>
+					<ADate>20010301</ADate>
+					<LinkEv TYPE="Numeric"/>
+					<Type>FRC</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">1.731</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric">2</EvStyle>
+					<BDate>20030303</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20010601</Date>
+					<ADate/>
+					<LinkEv TYPE="Numeric"/>
+					<Type>OFF</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">0.0</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric"/>
+					<BDate>     SUN</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20010601</Date>
+					<ADate>20010601</ADate>
+					<LinkEv TYPE="Numeric"/>
+					<Type>FRC</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">1.731</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric">2</EvStyle>
+					<BDate>20030303</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20010901</Date>
+					<ADate/>
+					<LinkEv TYPE="Numeric"/>
+					<Type>OFF</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">0.0</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric"/>
+					<BDate>     SUN</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20010901</Date>
+					<ADate>20010903</ADate>
+					<LinkEv TYPE="Numeric"/>
+					<Type>FRC</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">1.731</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric">2</EvStyle>
+					<BDate>20030303</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20011201</Date>
+					<ADate/>
+					<LinkEv TYPE="Numeric"/>
+					<Type>OFF</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">0.0</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric"/>
+					<BDate>     SUN</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20011201</Date>
+					<ADate>20011203</ADate>
+					<LinkEv TYPE="Numeric"/>
+					<Type>FRC</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">1.731</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric">2</EvStyle>
+					<BDate>20030303</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20020301</Date>
+					<ADate/>
+					<LinkEv TYPE="Numeric"/>
+					<Type>OFF</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">0.0</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric"/>
+					<BDate>     SUN</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20020301</Date>
+					<ADate>20020301</ADate>
+					<LinkEv TYPE="Numeric"/>
+					<Type>FRC</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">1.757</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric">2</EvStyle>
+					<BDate>20030303</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20020601</Date>
+					<ADate/>
+					<LinkEv TYPE="Numeric"/>
+					<Type>OFF</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">0.0</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric"/>
+					<BDate>     SUN</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20020601</Date>
+					<ADate>20020605</ADate>
+					<LinkEv TYPE="Numeric"/>
+					<Type>FRC</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">1.757</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric">2</EvStyle>
+					<BDate>20030303</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20020901</Date>
+					<ADate/>
+					<LinkEv TYPE="Numeric"/>
+					<Type>OFF</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">0.0</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric"/>
+					<BDate>     SUN</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20020901</Date>
+					<ADate>20020902</ADate>
+					<LinkEv TYPE="Numeric"/>
+					<Type>FRC</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">1.757</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric">2</EvStyle>
+					<BDate>20030303</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20021201</Date>
+					<ADate/>
+					<LinkEv TYPE="Numeric"/>
+					<Type>OFF</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">0.0</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric"/>
+					<BDate>     SUN</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20021201</Date>
+					<ADate>20021202</ADate>
+					<LinkEv TYPE="Numeric"/>
+					<Type>FRC</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">1.757</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric">2</EvStyle>
+					<BDate>20030303</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20030301</Date>
+					<ADate/>
+					<LinkEv TYPE="Numeric"/>
+					<Type>OFF</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">0.0</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric"/>
+					<BDate>     SUN</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20030301</Date>
+					<ADate>20030527</ADate>
+					<LinkEv TYPE="Numeric"/>
+					<Type>FRC</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">1.812</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric">2</EvStyle>
+					<BDate>20030520</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20030601</Date>
+					<ADate/>
+					<LinkEv TYPE="Numeric"/>
+					<Type>OFF</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">0.0</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric"/>
+					<BDate>     SUN</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20030601</Date>
+					<ADate>20030602</ADate>
+					<LinkEv TYPE="Numeric"/>
+					<Type>FRC</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">1.812</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric">2</EvStyle>
+					<BDate>20030520</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20030901</Date>
+					<ADate/>
+					<LinkEv TYPE="Numeric"/>
+					<Type>OFF</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">0.0</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric"/>
+					<BDate>     SUN</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20030901</Date>
+					<ADate>20030901</ADate>
+					<LinkEv TYPE="Numeric"/>
+					<Type>FRC</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">1.812</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric">2</EvStyle>
+					<BDate>20030520</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20031201</Date>
+					<ADate/>
+					<LinkEv TYPE="Numeric"/>
+					<Type>OFF</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">0.0</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric"/>
+					<BDate>     SUN</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20031201</Date>
+					<ADate>20031201</ADate>
+					<LinkEv TYPE="Numeric"/>
+					<Type>FRC</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">1.812</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric">2</EvStyle>
+					<BDate>20030520</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20040301</Date>
+					<ADate/>
+					<LinkEv TYPE="Numeric"/>
+					<Type>OFF</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">0.0</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric"/>
+					<BDate>     SUN</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20040301</Date>
+					<ADate>20040525</ADate>
+					<LinkEv TYPE="Numeric"/>
+					<Type>FRC</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">1.857</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric">2</EvStyle>
+					<BDate>20040518</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20040601</Date>
+					<ADate/>
+					<LinkEv TYPE="Numeric"/>
+					<Type>OFF</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">0.0</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric"/>
+					<BDate>     SUN</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20040601</Date>
+					<ADate>20040601</ADate>
+					<LinkEv TYPE="Numeric"/>
+					<Type>FRC</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">1.857</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric">2</EvStyle>
+					<BDate>20040518</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20040901</Date>
+					<ADate/>
+					<LinkEv TYPE="Numeric"/>
+					<Type>OFF</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">0.0</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric"/>
+					<BDate>     SUN</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20040901</Date>
+					<ADate>20040901</ADate>
+					<LinkEv TYPE="Numeric"/>
+					<Type>FRC</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">1.857</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric">2</EvStyle>
+					<BDate>20040518</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20041201</Date>
+					<ADate/>
+					<LinkEv TYPE="Numeric"/>
+					<Type>OFF</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">0.0</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric"/>
+					<BDate>     SUN</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20041201</Date>
+					<ADate>20041201</ADate>
+					<LinkEv TYPE="Numeric"/>
+					<Type>FRC</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">1.857</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric">2</EvStyle>
+					<BDate>20040518</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20050301</Date>
+					<ADate/>
+					<LinkEv TYPE="Numeric"/>
+					<Type>OFF</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">0.0</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric"/>
+					<BDate>     SUN</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20050301</Date>
+					<ADate>20050525</ADate>
+					<LinkEv TYPE="Numeric"/>
+					<Type>FRC</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">1.916</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric">2</EvStyle>
+					<BDate>20050517</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20050601</Date>
+					<ADate/>
+					<LinkEv TYPE="Numeric"/>
+					<Type>OFF</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">0.0</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric"/>
+					<BDate>     SUN</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20050601</Date>
+					<ADate>20050601</ADate>
+					<LinkEv TYPE="Numeric"/>
+					<Type>FRC</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">1.916</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric">2</EvStyle>
+					<BDate>20050601</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20050901</Date>
+					<ADate/>
+					<LinkEv TYPE="Numeric"/>
+					<Type>OFF</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">0.0</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric"/>
+					<BDate>     SUN</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20050901</Date>
+					<ADate>20050901</ADate>
+					<LinkEv TYPE="Numeric"/>
+					<Type>FRC</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">1.916</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric">2</EvStyle>
+					<BDate>20050517</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20051201</Date>
+					<ADate/>
+					<LinkEv TYPE="Numeric"/>
+					<Type>OFF</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">0.0</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric"/>
+					<BDate>     SUN</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20051201</Date>
+					<ADate>20051201</ADate>
+					<LinkEv TYPE="Numeric"/>
+					<Type>FRC</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">1.916</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric">2</EvStyle>
+					<BDate>20050517</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20060301</Date>
+					<ADate/>
+					<LinkEv TYPE="Numeric"/>
+					<Type>OFF</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">0.0</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric"/>
+					<BDate>     SUN</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20060301</Date>
+					<ADate>20060525</ADate>
+					<LinkEv TYPE="Numeric"/>
+					<Type>FRC</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">1.965</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric">2</EvStyle>
+					<BDate>20060525</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20060601</Date>
+					<ADate/>
+					<LinkEv TYPE="Numeric"/>
+					<Type>OFF</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">0.0</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric"/>
+					<BDate>     SUN</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20060601</Date>
+					<ADate>20060601</ADate>
+					<LinkEv TYPE="Numeric"/>
+					<Type>FRC</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">1.965</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric">2</EvStyle>
+					<BDate>20060525</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20060901</Date>
+					<ADate/>
+					<LinkEv TYPE="Numeric"/>
+					<Type>OFF</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">0.0</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric"/>
+					<BDate>     SUN</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20060901</Date>
+					<ADate>20060901</ADate>
+					<LinkEv TYPE="Numeric"/>
+					<Type>FRC</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">1.965</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric">2</EvStyle>
+					<BDate>20060525</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20061201</Date>
+					<ADate/>
+					<LinkEv TYPE="Numeric"/>
+					<Type>OFF</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">0.0</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric"/>
+					<BDate>     SUN</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20061201</Date>
+					<ADate>20061201</ADate>
+					<LinkEv TYPE="Numeric"/>
+					<Type>FRC</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">1.965</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric">2</EvStyle>
+					<BDate>20060525</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20070301</Date>
+					<ADate/>
+					<LinkEv TYPE="Numeric"/>
+					<Type>OFF</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">0.0</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric"/>
+					<BDate>     SUN</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20070301</Date>
+					<ADate>20070525</ADate>
+					<LinkEv TYPE="Numeric"/>
+					<Type>FRC</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">2.054</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric">2</EvStyle>
+					<BDate>20070525</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20070601</Date>
+					<ADate/>
+					<LinkEv TYPE="Numeric"/>
+					<Type>OFF</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">0.0</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric"/>
+					<BDate>     SUN</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20070601</Date>
+					<ADate>20070601</ADate>
+					<LinkEv TYPE="Numeric"/>
+					<Type>FRC</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">2.054</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric">2</EvStyle>
+					<BDate>20070604</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20070901</Date>
+					<ADate>20070903</ADate>
+					<LinkEv TYPE="Numeric"/>
+					<Type>ROF</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">0.0</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric"/>
+					<BDate>     SUN</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20071201</Date>
+					<ADate>20071203</ADate>
+					<LinkEv TYPE="Numeric"/>
+					<Type>ROF</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">0.0</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric"/>
+					<BDate>     SUN</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20080301</Date>
+					<ADate/>
+					<LinkEv TYPE="Numeric"/>
+					<Type>OFF</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">0.0</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric"/>
+					<BDate>     SUN</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+				<EVENT>
+					<Date>20080303</Date>
+					<ADate>20080301</ADate>
+					<LinkEv TYPE="Numeric"/>
+					<Type>NTL</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">3457500.0</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric"/>
+					<BDate>     SUN</BDate>
+					<CDate>     SUN</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+			</Events>
+			<CmdtyQuoteType/>
+			<INT_DIV_PayDividend>RESET</INT_DIV_PayDividend>
+			<INT_DIV_HedgeDivRatio TYPE="Numeric">0.0</INT_DIV_HedgeDivRatio>
+			<INT_RES_AuxDomain/>
+			<SCHED_Pay_GapDRule/>
+			<SCHED_Reset_GapDRule/>
+			<AMORT_Sched_GapDRuleID/>
+			<AMORT_DRuleID/>
+			<INT_AVG_Gap>      0D</INT_AVG_Gap>
+			<INT_RES_NTL_Gap>      0D</INT_RES_NTL_Gap>
+			<INT_RES_FX_Gap>      0D</INT_RES_FX_Gap>
+			<SCHED_Pay_Gap>      0D</SCHED_Pay_Gap>
+			<SCHED_Reset_Gap>      0D</SCHED_Reset_Gap>
+			<AMORT_Sched_Gap/>
+			<INT_DIV_Gap>      0D</INT_DIV_Gap>
+			<ProductName/>
+			<AccrualFactors/>
+			<STUB_StartCal>LON</STUB_StartCal>
+			<STUB_EndCal>LON</STUB_EndCal>
+			<STUB_StartSource1/>
+			<STUB_StartSource2/>
+			<STUB_EndSource1/>
+			<STUB_EndSource2/>
+			<INT_InterimRound/>
+			<INT_InterimRoundDP TYPE="Numeric"/>
+			<INT_RES_ConvRound/>
+			<INT_RES_ConvRoundDP TYPE="Numeric"/>
+			<INT_RES_PaymentReset>N</INT_RES_PaymentReset>
+			<INT_RES_CutOffDays TYPE="Numeric"/>
+			<INT_RES_NTL_PaymentReset>N</INT_RES_NTL_PaymentReset>
+			<INT_RES_NTL_CutOffDays TYPE="Numeric"/>
+			<INT_RES_FX_PaymentReset>N</INT_RES_FX_PaymentReset>
+			<INT_RES_FX_CutOffDays TYPE="Numeric"/>
+			<INTEREST_OrgIndex/>
+			<INTEREST_OrgCcy/>
+			<INTEREST_OrgSource/>
+			<OrigMatDate/>
+			<GapDateRoll/>
+			<INT_ACC_UseProj/>
+			<FinNtlExchCal/>
+			<FinCalAtPay/>
+			<Deliverable/>
+			<INT_RES_DorF/>
+			<PayMethod/>
+			<RedemFormula TYPE="EntList" SINGLE="N"/>
+			<RedemProductName/>
+			<CfRound/>
+			<CfRoundDP TYPE="Numeric"/>
+			<INTEREST_Method/>
+			<DENOM_Type/>
+			<DENOM_Amount TYPE="Numeric"/>
+			<DENOM_Round/>
+			<DENOM_RoundDP TYPE="Numeric"/>
+			<INT_ACC_RateType/>
+			<LoanIntRule/>
+			<LoanBasis/>
+			<LoanRate TYPE="Numeric">0.0</LoanRate>
+			<LoanStubType/>
+			<LoanNtlAmortType/>
+			<PayEvents TYPE="EntList" SINGLE="N"/>
+			<AdjFstXNL/>
+			<FreqDecompType/>
+			<FreqDecompFreq/>
+			<StubFreqDecompType/>
+			<StubFreqDecompFreq/>
+			<STUB_IgnoreHalfPeriodRule/>
+			<BusMatDate>N</BusMatDate>
+			<INTEREST_IntRateType>FLT</INTEREST_IntRateType>
+			<ROLL_RolloverStatus/>
+			<SIAsset TYPE="EntList" SINGLE="Y"/>
+			<NotionalDaysGap/>
+			<NotionalGapDRuleID/>
+			<UseIntPayGapRules>Y</UseIntPayGapRules>
+			<ProdData TYPE="EntList" SINGLE="Y"/>
+			<RedemProdData TYPE="EntList" SINGLE="Y"/>
+		</ASSET>
+		<ASSET>
+			<dmAssetId>00045679</dmAssetId>
+			<dmOwnerTable>SWAP</dmOwnerTable>
+			<TradeId>123456LQ</TradeId>
+			<SchedEvents TYPE="EntList" SINGLE="N"/>
+			<Type>SWAP</Type>
+			<SubType>IRSWAP</SubType>
+			<RC>TBC</RC>
+			<Book>LQBOOK</Book>
+			<PorS>S</PorS>
+			<EffDate>20010301</EffDate>
+			<MatDate>20080301</MatDate>
+			<Notional TYPE="Numeric">3457500.0</Notional>
+			<NotExp/>
+			<Ccy>GBP</Ccy>
+			<STUB_Date1/>
+			<STUB_Rate1 TYPE="Numeric">0.0</STUB_Rate1>
+			<STUB_Date2/>
+			<STUB_Rate2 TYPE="Numeric">0.0</STUB_Rate2>
+			<STUB_StubType/>
+			<STUB_Decomp>N</STUB_Decomp>
+			<STUB_CompMode/>
+			<STUB_Rounding TYPE="Numeric"/>
+			<STUB_InterpStyle>E</STUB_InterpStyle>
+			<STUB_StartTerm1/>
+			<STUB_StartTerm2/>
+			<STUB_EndTerm1/>
+			<STUB_EndTerm2/>
+			<ResetInStub>N</ResetInStub>
+			<INTEREST_IndexForm/>
+			<INTEREST_YldFreq/>
+			<INTEREST_FixFloat>FLO</INTEREST_FixFloat>
+			<INTEREST_Rate TYPE="Numeric">0.0</INTEREST_Rate>
+			<INTEREST_Basis>30/360</INTEREST_Basis>
+			<INTEREST_dmIndex>FORM</INTEREST_dmIndex>
+			<INTEREST_Ccy>GBP</INTEREST_Ccy>
+			<INT_REF_OrgSource/>
+			<INT_REF_Source>T3750</INT_REF_Source>
+			<INT_REF_NNearBy TYPE="Numeric">-200000</INT_REF_NNearBy>
+			<INTEREST_Spread TYPE="Numeric">0.0</INTEREST_Spread>
+			<INTEREST_Term/>
+			<INT_AVG_Type/>
+			<INT_AVG_Freq/>
+			<INT_AVG_Compound>N</INT_AVG_Compound>
+			<INT_AVG_AnnDay TYPE="Numeric">-200000</INT_AVG_AnnDay>
+			<INT_AVG_Rule>MF</INT_AVG_Rule>
+			<INT_AVG_Spread/>
+			<INT_AVG_Time/>
+			<INT_AVG_CutOffDays TYPE="Numeric"/>
+			<INT_AVG_CorBGap>B</INT_AVG_CorBGap>
+			<INTEREST_DType/>
+			<INTEREST_Round/>
+			<INTEREST_RoundDP TYPE="Numeric">-200000</INTEREST_RoundDP>
+			<INT_RES_Rule/>
+			<INT_RES_Time/>
+			<INT_RES_Round/>
+			<INT_RES_RoundDP TYPE="Numeric"/>
+			<INT_RES_NTL_REF_OrgSource/>
+			<INT_RES_NTL_REF_Source/>
+			<INT_RES_NTL_REF_NNearBy TYPE="Numeric">-200000</INT_RES_NTL_REF_NNearBy>
+			<INT_RES_NTL_Cal/>
+			<INT_RES_NTL_Term/>
+			<INT_RES_FX_REF_OrgSource/>
+			<INT_RES_FX_REF_Source/>
+			<INT_RES_FX_REF_NNearBy TYPE="Numeric">-200000</INT_RES_FX_REF_NNearBy>
+			<INT_RES_FX_Cal/>
+			<INT_RES_FX_Term/>
+			<INT_RES_FxDomain/>
+			<INT_ACC_AccCalc>N</INT_ACC_AccCalc>
+			<INT_ACC_Method/>
+			<INT_ACC_ForL/>
+			<INT_ACC_Basis>A365F</INT_ACC_Basis>
+			<INTEREST_FwdDecomp>N</INTEREST_FwdDecomp>
+			<INT_DIV_Ratio TYPE="Numeric">0.0</INT_DIV_Ratio>
+			<INT_DIV_ReInvest>N</INT_DIV_ReInvest>
+			<INT_DIV_DivMethod/>
+			<INTEREST_NRate TYPE="Numeric">0.0</INTEREST_NRate>
+			<INTEREST_NonContig>N</INTEREST_NonContig>
+			<INTEREST_UnderIndex/>
+			<SCHED_Pay_Freq>Q</SCHED_Pay_Freq>
+			<SCHED_Pay_AnnDay TYPE="Numeric">1</SCHED_Pay_AnnDay>
+			<SCHED_Pay_Rule>MF</SCHED_Pay_Rule>
+			<SCHED_Pay_IntRule>N</SCHED_Pay_IntRule>
+			<SCHED_Pay_Time>ARR</SCHED_Pay_Time>
+			<SCHED_Pay_Cal>012</SCHED_Pay_Cal>
+			<SCHED_Pay_DRule/>
+			<SCHED_Reset_Freq>Q</SCHED_Reset_Freq>
+			<SCHED_Reset_AnnDay TYPE="Numeric">1</SCHED_Reset_AnnDay>
+			<SCHED_Reset_Rule>MF</SCHED_Reset_Rule>
+			<SCHED_Reset_IntRule>N</SCHED_Reset_IntRule>
+			<SCHED_Reset_Time>ADV</SCHED_Reset_Time>
+			<SCHED_Reset_Cal>LON</SCHED_Reset_Cal>
+			<SCHED_Reset_DRule/>
+			<COMP_CompFreq/>
+			<COMP_Mode/>
+			<AMORT_Type/>
+			<AMORT_Amount TYPE="Numeric"/>
+			<AMORT_Start/>
+			<AMORT_End/>
+			<AMORT_Freq/>
+			<Custom>STND</Custom>
+			<CROSS_CCY_NotExch/>
+			<CROSS_CCY_ForexRate TYPE="Numeric">0.0</CROSS_CCY_ForexRate>
+			<OptionData>N</OptionData>
+			<PModel/>
+			<Style/>
+			<OPForm/>
+			<SubIndex/>
+			<TermDate/>
+			<ROLL_RollNature/>
+			<ROLL_NoticeDays TYPE="Numeric">-200000</ROLL_NoticeDays>
+			<ROLL_ReInvestAmt/>
+			<FstCpEffect/>
+			<NextFixing>20070903</NextFixing>
+			<RiskId/>
+			<INT_AVG_Conversion/>
+			<INT_RES_RefixMode>AUTO</INT_RES_RefixMode>
+			<INT_AVG_CutOffMeth/>
+			<Audit_Version TYPE="Numeric">58</Audit_Version>
+			<AMORT_NtlForm/>
+			<AMORT_Sched_Freq/>
+			<AMORT_Sched_AnnDay TYPE="Numeric">-200000</AMORT_Sched_AnnDay>
+			<AMORT_Sched_Rule/>
+			<AMORT_Sched_IntRule/>
+			<AMORT_Sched_Time/>
+			<AMORT_Sched_Cal/>
+			<AMORT_Sched_DRuleID/>
+			<INTEREST_FundIndex/>
+			<INTEREST_FundSprd TYPE="Numeric">0.0</INTEREST_FundSprd>
+			<MMType/>
+			<LegRole>ALL</LegRole>
+			<GroupNum TYPE="Numeric">-200000</GroupNum>
+			<NumEve TYPE="Numeric">1</NumEve>
+			<Formula TYPE="EntList" SINGLE="N">
+				<FORMULA>
+					<Date>20010301</Date>
+					<FormulaId/>
+					<Formula TYPE="ObjRef">( 1 + 0.028 ) ^ 5 - 1</Formula>
+					<RedempType/>
+				</FORMULA>
+				<FORMULA>
+					<Date>20020301</Date>
+					<FormulaId/>
+					<Formula TYPE="ObjRef">( 1 + 0.028 ) ^ 6 - 1</Formula>
+					<RedempType/>
+				</FORMULA>
+				<FORMULA>
+					<Date>20030301</Date>
+					<FormulaId/>
+					<Formula TYPE="ObjRef">( 1 + 0.028 ) ^ 7 - 1</Formula>
+					<RedempType/>
+				</FORMULA>
+				<FORMULA>
+					<Date>20040301</Date>
+					<FormulaId/>
+					<Formula TYPE="ObjRef">( 1 + 0.028 ) ^ 8 - 1</Formula>
+					<RedempType/>
+				</FORMULA>
+				<FORMULA>
+					<Date>20050301</Date>
+					<FormulaId/>
+					<Formula TYPE="ObjRef">( 1 + 0.028 ) ^ 9 - 1</Formula>
+					<RedempType/>
+				</FORMULA>
+				<FORMULA>
+					<Date>20060301</Date>
+					<FormulaId/>
+					<Formula TYPE="ObjRef">( 1 + 0.028 ) ^ 10 - 1</Formula>
+					<RedempType/>
+				</FORMULA>
+				<FORMULA>
+					<Date>20070301</Date>
+					<FormulaId/>
+					<Formula TYPE="ObjRef">( 1 + 0.028 ) ^ 11 - 1</Formula>
+					<RedempType/>
+				</FORMULA>
+			</Formula>
+			<Events TYPE="EntList" SINGLE="N">
+				<EVENT>
+					<Date>19991221</Date>
+					<ADate>19991221</ADate>
+					<LinkEv TYPE="Numeric"/>
+					<Type>FEE</Type>
+					<Ccy>GBP</Ccy>
+					<Amount TYPE="Numeric">-358000.0</Amount>
+					<RiskId/>
+					<EvStyle TYPE="Numeric"/>
+					<BDate>20010301</BDate>
+					<CDate>20080301</CDate>
+					<EventCal/>
+					<EventBDRule/>
+				</EVENT>
+			</Events>
+			<INT_DIV_PayDividend>RESET</INT_DIV_PayDividend>
+			<INT_DIV_HedgeDivRatio TYPE="Numeric">0.0</INT_DIV_HedgeDivRatio>
+			<INT_RES_AuxDomain/>
+			<SCHED_Pay_GapDRule/>
+			<SCHED_Reset_GapDRule/>
+			<AMORT_Sched_GapDRuleID/>
+			<AMORT_DRuleID/>
+			<INT_AVG_Gap>      0D</INT_AVG_Gap>
+			<INT_RES_NTL_Gap>      0D</INT_RES_NTL_Gap>
+			<INT_RES_FX_Gap>      0D</INT_RES_FX_Gap>
+			<SCHED_Pay_Gap>      0D</SCHED_Pay_Gap>
+			<SCHED_Reset_Gap>      0D</SCHED_Reset_Gap>
+			<AMORT_Sched_Gap/>
+			<INT_DIV_Gap>      0D</INT_DIV_Gap>
+			<ProductName/>
+			<AccrualFactors/>
+			<STUB_StartCal>LON</STUB_StartCal>
+			<STUB_EndCal>LON</STUB_EndCal>
+			<STUB_StartSource1/>
+			<STUB_StartSource2/>
+			<STUB_EndSource1/>
+			<STUB_EndSource2/>
+			<INT_InterimRound/>
+			<INT_InterimRoundDP TYPE="Numeric"/>
+			<INT_RES_ConvRound/>
+			<INT_RES_ConvRoundDP TYPE="Numeric"/>
+			<INT_RES_PaymentReset>N</INT_RES_PaymentReset>
+			<INT_RES_CutOffDays TYPE="Numeric"/>
+			<INT_RES_NTL_PaymentReset>N</INT_RES_NTL_PaymentReset>
+			<INT_RES_NTL_CutOffDays TYPE="Numeric"/>
+			<INT_RES_FX_PaymentReset>N</INT_RES_FX_PaymentReset>
+			<INT_RES_FX_CutOffDays TYPE="Numeric"/>
+			<INTEREST_OrgIndex/>
+			<INTEREST_OrgCcy/>
+			<INTEREST_OrgSource/>
+			<OrigMatDate/>
+			<GapDateRoll/>
+			<INT_ACC_UseProj/>
+			<FinNtlExchCal/>
+			<FinCalAtPay/>
+			<Deliverable/>
+			<INT_RES_DorF/>
+			<PayMethod/>
+			<RedemFormula TYPE="EntList" SINGLE="N"/>
+			<RedemProductName/>
+			<CfRound/>
+			<CfRoundDP TYPE="Numeric"/>
+			<INTEREST_Method/>
+			<DENOM_Type/>
+			<DENOM_Amount TYPE="Numeric"/>
+			<DENOM_Round/>
+			<DENOM_RoundDP TYPE="Numeric"/>
+			<INT_ACC_RateType/>
+			<LoanIntRule/>
+			<LoanBasis/>
+			<LoanRate TYPE="Numeric">0.0</LoanRate>
+			<LoanStubType/>
+			<LoanNtlAmortType/>
+			<PayEvents TYPE="EntList" SINGLE="N"/>
+			<AdjFstXNL/>
+			<FreqDecompType/>
+			<FreqDecompFreq/>
+			<StubFreqDecompType/>
+			<StubFreqDecompFreq/>
+			<STUB_IgnoreHalfPeriodRule/>
+			<BusMatDate>N</BusMatDate>
+			<INTEREST_IntRateType>FLT</INTEREST_IntRateType>
+			<ROLL_RolloverStatus/>
+			<SIAsset TYPE="EntList" SINGLE="Y"/>
+			<NotionalDaysGap/>
+			<NotionalGapDRuleID/>
+			<UseIntPayGapRules>Y</UseIntPayGapRules>
+			<ProdData TYPE="EntList" SINGLE="Y"/>
+			<RedemProdData TYPE="EntList" SINGLE="Y"/>
+		</ASSET>
+	</Assets>
+	<SDTradeLink TYPE="EntList" SINGLE="Y"/>
+	<Break TYPE="EntList" SINGLE="Y">
+		<BREAK>
+			<TradeId>123456LQ</TradeId>
+			<dmOwnerTable>SWAP</dmOwnerTable>
+			<OptionOwner>MUTUAL</OptionOwner>
+			<ExpStyle>BERM</ExpStyle>
+			<ExpDate>20080303</ExpDate>
+			<FirstExpDate>20010301</FirstExpDate>
+			<Notes>PAY LEG RPI BASED FOR PAYMENTS</Notes>
+			<NoticePeriod TYPE="EntList" SINGLE="N"/>
+		</BREAK>
+	</Break>
+	<TradeCorpActList TYPE="EntList" SINGLE="N"/>
+</SWAP>

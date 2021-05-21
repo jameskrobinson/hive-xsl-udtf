@@ -1,0 +1,885 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="SWAP_AND_FLOWS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="SWAP">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TradeId" type="xs:string" />
+              <xs:element name="TradeType" type="xs:string" />
+              <xs:element name="Env">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ENV">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Audit_Id" type="xs:string" />
+                          <xs:element name="Audit_Table" type="xs:string" />
+                          <xs:element name="Audit_Version">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:unsignedByte">
+                                  <xs:attribute name="TYPE" type="xs:string" use="required" />
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="Audit_Current" type="xs:string" />
+                          <xs:element name="Audit_EntityState" type="xs:string" />
+                          <xs:element name="Audit_Authorized" type="xs:string" />
+                          <xs:element name="Audit_PendingAction" />
+                          <xs:element name="Audit_PendingState" />
+                          <xs:element name="Audit_IsHistory" type="xs:string" />
+                          <xs:element name="Audit_User" type="xs:string" />
+                          <xs:element name="Audit_Action" type="xs:string" />
+                          <xs:element name="Audit_DateTime" type="xs:string" />
+                          <xs:element name="Audit_ExtStateName" type="xs:string" />
+                          <xs:element name="Audit_StateId">
+                            <xs:complexType>
+                              <xs:attribute name="TYPE" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="dmOwnerTable" type="xs:string" />
+                          <xs:element name="TradeId" type="xs:string" />
+                          <xs:element name="InputDate" type="xs:unsignedInt" />
+                          <xs:element name="InputTime" type="xs:time" />
+                          <xs:element name="Cust" type="xs:string" />
+                          <xs:element name="Company" type="xs:string" />
+                          <xs:element name="BookedBy" />
+                          <xs:element name="BookedFor" />
+                          <xs:element name="BookSpr">
+                            <xs:complexType>
+                              <xs:attribute name="TYPE" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="BookCcy" />
+                          <xs:element name="BookFee">
+                            <xs:complexType>
+                              <xs:attribute name="TYPE" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="BookFeeDate" />
+                          <xs:element name="RC" />
+                          <xs:element name="Book" type="xs:string" />
+                          <xs:element name="RCSpread">
+                            <xs:complexType>
+                              <xs:attribute name="TYPE" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="Trader" type="xs:string" />
+                          <xs:element name="Broker" type="xs:string" />
+                          <xs:element name="Contact" />
+                          <xs:element name="Desk" type="xs:string" />
+                          <xs:element name="Folder" />
+                          <xs:element name="DealId" />
+                          <xs:element name="TradeDate" type="xs:unsignedInt" />
+                          <xs:element name="TradeStatus" type="xs:string" />
+                          <xs:element name="RCTrade" type="xs:string" />
+                          <xs:element name="ProductGroup" type="xs:string" />
+                          <xs:element name="ProductType" type="xs:string" />
+                          <xs:element name="BackDated" type="xs:string" />
+                          <xs:element name="FinalMaturity" />
+                          <xs:element name="ProjectId" />
+                          <xs:element name="IsMirror" type="xs:string" />
+                          <xs:element name="PayMethod" />
+                          <xs:element name="Comment1" type="xs:string" />
+                          <xs:element name="Comment2" type="xs:string" />
+                          <xs:element name="LastUpdate" type="xs:string" />
+                          <xs:element name="MarketerId" type="xs:string" />
+                          <xs:element name="NumSSI">
+                            <xs:complexType>
+                              <xs:attribute name="TYPE" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="MirrorSchemeId" />
+                          <xs:element name="StructureId" />
+                          <xs:element name="ViewName" />
+                          <xs:element name="FacilityId" />
+                          <xs:element name="TrancheId" />
+                          <xs:element name="LoanId" />
+                          <xs:element name="LFType" />
+                          <xs:element name="LoanCcy" />
+                          <xs:element name="ParentOwnerTable" />
+                          <xs:element name="ParentTradeId" />
+                          <xs:element name="SyndicatedLoan" type="xs:string" />
+                          <xs:element name="Breakable" type="xs:string" />
+                          <xs:element name="SsiInstr">
+                            <xs:complexType>
+                              <xs:attribute name="TYPE" type="xs:string" use="required" />
+                              <xs:attribute name="SINGLE" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="UltBeneficiary" />
+                          <xs:element name="CreditRisk" type="xs:string" />
+                          <xs:element name="TradeEntryDate" type="xs:unsignedInt" />
+                          <xs:element name="SIProductID" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="TYPE" type="xs:string" use="required" />
+                  <xs:attribute name="SINGLE" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Back">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="BACK">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="dmOwnerTable" type="xs:string" />
+                          <xs:element name="TradeId" type="xs:string" />
+                          <xs:element name="ExtTradeId" />
+                          <xs:element name="SummitId" />
+                          <xs:element name="OldId" />
+                          <xs:element name="Code" />
+                          <xs:element name="PendingUser" type="xs:string" />
+                          <xs:element name="PendingDate" type="xs:unsignedInt" />
+                          <xs:element name="PendingTime" type="xs:time" />
+                          <xs:element name="DoneUser" type="xs:string" />
+                          <xs:element name="DoneDate" type="xs:unsignedInt" />
+                          <xs:element name="DoneTime" type="xs:time" />
+                          <xs:element name="VerifyUser" type="xs:string" />
+                          <xs:element name="VerifyDate" type="xs:unsignedInt" />
+                          <xs:element name="VerifyTime" type="xs:time" />
+                          <xs:element name="CancelUser" />
+                          <xs:element name="CancelDate" />
+                          <xs:element name="CancelTime" type="xs:time" />
+                          <xs:element name="AmendUser" type="xs:string" />
+                          <xs:element name="AmendDate" type="xs:unsignedInt" />
+                          <xs:element name="AmendTime" type="xs:string" />
+                          <xs:element name="ConfirmExec" type="xs:string" />
+                          <xs:element name="CollateralHeld" type="xs:string" />
+                          <xs:element name="CollateralAmt">
+                            <xs:complexType>
+                              <xs:attribute name="TYPE" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="TermTradeDate" />
+                          <xs:element name="TermEffDate" />
+                          <xs:element name="TermInputDate" />
+                          <xs:element name="OrigMatDate" />
+                          <xs:element name="OrigNotional">
+                            <xs:complexType>
+                              <xs:attribute name="TYPE" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="Street" />
+                          <xs:element name="NetSettle" type="xs:string" />
+                          <xs:element name="TermAssignStatus" />
+                          <xs:element name="SchemaId" type="xs:string" />
+                          <xs:element name="TrAcctType" type="xs:string" />
+                          <xs:element name="CommonRef" />
+                          <xs:element name="AssignTo" />
+                          <xs:element name="AssignFrom" />
+                          <xs:element name="Audit_Version">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:unsignedByte">
+                                  <xs:attribute name="TYPE" type="xs:string" use="required" />
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="TradeNetting" type="xs:string" />
+                          <xs:element name="ThresholdCcy" />
+                          <xs:element name="ThresholdAmount">
+                            <xs:complexType>
+                              <xs:attribute name="TYPE" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="ExerciseTo" />
+                          <xs:element name="ExerciseOwnerTable" />
+                          <xs:element name="SecId" />
+                          <xs:element name="SecType" />
+                          <xs:element name="SecCcy" />
+                          <xs:element name="MergeTradeId" />
+                          <xs:element name="EuroConversionDate" />
+                          <xs:element name="OurSettlementCountry" />
+                          <xs:element name="CustSettlementCountry" />
+                          <xs:element name="PositionType" />
+                          <xs:element name="NetSettlement" />
+                          <xs:element name="NetCredit" />
+                          <xs:element name="MAFormat" />
+                          <xs:element name="MAStyle" />
+                          <xs:element name="ExternalUser" />
+                          <xs:element name="ExtSystem" />
+                          <xs:element name="SSIOpsCode" />
+                          <xs:element name="ContOpsCode" />
+                          <xs:element name="NavOpsCode" />
+                          <xs:element name="AggressorFlag" />
+                          <xs:element name="MatchingId" />
+                          <xs:element name="OrigEffectDate" />
+                          <xs:element name="ExtVersion">
+                            <xs:complexType>
+                              <xs:attribute name="TYPE" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="SsiByEvent" type="xs:string" />
+                          <xs:element name="CLSSettlement" type="xs:string" />
+                          <xs:element name="CSD" />
+                          <xs:element name="CSD_AuditId" />
+                          <xs:element name="MirrorData">
+                            <xs:complexType>
+                              <xs:attribute name="TYPE" type="xs:string" use="required" />
+                              <xs:attribute name="SINGLE" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="TYPE" type="xs:string" use="required" />
+                  <xs:attribute name="SINGLE" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="TrSsiPairs">
+                <xs:complexType>
+                  <xs:attribute name="TYPE" type="xs:string" use="required" />
+                  <xs:attribute name="SINGLE" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Assets">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="ASSET">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="dmAssetId" type="xs:string" />
+                          <xs:element name="dmOwnerTable" type="xs:string" />
+                          <xs:element name="TradeId" type="xs:string" />
+                          <xs:element name="SchedEvents">
+                            <xs:complexType>
+                              <xs:attribute name="TYPE" type="xs:string" use="required" />
+                              <xs:attribute name="SINGLE" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="Type" type="xs:string" />
+                          <xs:element name="SubType" type="xs:string" />
+                          <xs:element name="RC" />
+                          <xs:element name="Book" type="xs:string" />
+                          <xs:element name="PorS" type="xs:string" />
+                          <xs:element name="EffDate" type="xs:unsignedInt" />
+                          <xs:element name="MatDate" type="xs:unsignedInt" />
+                          <xs:element name="Notional">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:decimal">
+                                  <xs:attribute name="TYPE" type="xs:string" use="required" />
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="NotExp" />
+                          <xs:element name="Ccy" type="xs:string" />
+                          <xs:element name="STUB_Date1" />
+                          <xs:element name="STUB_Rate1">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:decimal">
+                                  <xs:attribute name="TYPE" type="xs:string" use="required" />
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="STUB_Date2" />
+                          <xs:element name="STUB_Rate2">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:decimal">
+                                  <xs:attribute name="TYPE" type="xs:string" use="required" />
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="STUB_StubType" />
+                          <xs:element name="STUB_Decomp" type="xs:string" />
+                          <xs:element name="STUB_CompMode" />
+                          <xs:element name="STUB_Rounding">
+                            <xs:complexType>
+                              <xs:attribute name="TYPE" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="STUB_InterpStyle" type="xs:string" />
+                          <xs:element name="STUB_StartTerm1" />
+                          <xs:element name="STUB_StartTerm2" />
+                          <xs:element name="STUB_EndTerm1" />
+                          <xs:element name="STUB_EndTerm2" />
+                          <xs:element name="ResetInStub" type="xs:string" />
+                          <xs:element name="INTEREST_IndexForm" />
+                          <xs:element name="INTEREST_YldFreq" />
+                          <xs:element name="INTEREST_FixFloat" type="xs:string" />
+                          <xs:element name="INTEREST_Rate">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:decimal">
+                                  <xs:attribute name="TYPE" type="xs:string" use="required" />
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="INTEREST_Basis" type="xs:string" />
+                          <xs:element name="INTEREST_dmIndex" type="xs:string" />
+                          <xs:element name="INTEREST_Ccy" type="xs:string" />
+                          <xs:element name="INT_REF_OrgSource" />
+                          <xs:element name="INT_REF_Source" type="xs:string" />
+                          <xs:element name="INT_REF_NNearBy">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:int">
+                                  <xs:attribute name="TYPE" type="xs:string" use="required" />
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="INTEREST_Spread">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:decimal">
+                                  <xs:attribute name="TYPE" type="xs:string" use="required" />
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="INTEREST_Term" type="xs:string" />
+                          <xs:element name="INT_AVG_Type" />
+                          <xs:element name="INT_AVG_Freq" />
+                          <xs:element name="INT_AVG_Compound" type="xs:string" />
+                          <xs:element name="INT_AVG_AnnDay">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:int">
+                                  <xs:attribute name="TYPE" type="xs:string" use="required" />
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="INT_AVG_Rule" type="xs:string" />
+                          <xs:element name="INT_AVG_Spread" />
+                          <xs:element name="INT_AVG_Time" />
+                          <xs:element name="INT_AVG_CutOffDays">
+                            <xs:complexType>
+                              <xs:attribute name="TYPE" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="INT_AVG_CorBGap" type="xs:string" />
+                          <xs:element name="INTEREST_DType" />
+                          <xs:element name="INTEREST_Round" />
+                          <xs:element name="INTEREST_RoundDP">
+                            <xs:complexType>
+                              <xs:attribute name="TYPE" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="INT_RES_Rule" />
+                          <xs:element name="INT_RES_Time" />
+                          <xs:element name="INT_RES_Round" />
+                          <xs:element name="INT_RES_RoundDP">
+                            <xs:complexType>
+                              <xs:attribute name="TYPE" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="INT_RES_NTL_REF_OrgSource" />
+                          <xs:element name="INT_RES_NTL_REF_Source" />
+                          <xs:element name="INT_RES_NTL_REF_NNearBy">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:int">
+                                  <xs:attribute name="TYPE" type="xs:string" use="required" />
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="INT_RES_NTL_Cal" />
+                          <xs:element name="INT_RES_NTL_Term" />
+                          <xs:element name="INT_RES_FX_REF_OrgSource" />
+                          <xs:element name="INT_RES_FX_REF_Source" />
+                          <xs:element name="INT_RES_FX_REF_NNearBy">
+                            <xs:complexType>
+                              <xs:attribute name="TYPE" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="INT_RES_FX_Cal" />
+                          <xs:element name="INT_RES_FX_Term" />
+                          <xs:element name="INT_RES_FxDomain" />
+                          <xs:element name="INT_ACC_AccCalc" type="xs:string" />
+                          <xs:element name="INT_ACC_Method" />
+                          <xs:element name="INT_ACC_ForL" />
+                          <xs:element name="INT_ACC_Basis" type="xs:string" />
+                          <xs:element name="INTEREST_FwdDecomp" type="xs:string" />
+                          <xs:element name="INT_DIV_Ratio">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:decimal">
+                                  <xs:attribute name="TYPE" type="xs:string" use="required" />
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="INT_DIV_ReInvest" type="xs:string" />
+                          <xs:element name="INT_DIV_DivMethod" />
+                          <xs:element name="INTEREST_NRate">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:decimal">
+                                  <xs:attribute name="TYPE" type="xs:string" use="required" />
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="INTEREST_NonContig" type="xs:string" />
+                          <xs:element name="INTEREST_UnderIndex" type="xs:string" />
+                          <xs:element name="SCHED_Pay_Freq" type="xs:string" />
+                          <xs:element name="SCHED_Pay_AnnDay">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:unsignedByte">
+                                  <xs:attribute name="TYPE" type="xs:string" use="required" />
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="SCHED_Pay_Rule" type="xs:string" />
+                          <xs:element name="SCHED_Pay_IntRule" type="xs:string" />
+                          <xs:element name="SCHED_Pay_Time" type="xs:string" />
+                          <xs:element name="SCHED_Pay_Cal" type="xs:string" />
+                          <xs:element name="SCHED_Pay_DRule" />
+                          <xs:element name="SCHED_Reset_Freq" type="xs:string" />
+                          <xs:element name="SCHED_Reset_AnnDay">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:int">
+                                  <xs:attribute name="TYPE" type="xs:string" use="required" />
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="SCHED_Reset_Rule" type="xs:string" />
+                          <xs:element name="SCHED_Reset_IntRule" type="xs:string" />
+                          <xs:element name="SCHED_Reset_Time" type="xs:string" />
+                          <xs:element name="SCHED_Reset_Cal" type="xs:string" />
+                          <xs:element name="SCHED_Reset_DRule" />
+                          <xs:element name="COMP_CompFreq" />
+                          <xs:element name="COMP_Mode" />
+                          <xs:element name="AMORT_Type" />
+                          <xs:element name="AMORT_Amount">
+                            <xs:complexType>
+                              <xs:attribute name="TYPE" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="AMORT_Start" />
+                          <xs:element name="AMORT_End" />
+                          <xs:element name="AMORT_Freq" />
+                          <xs:element name="Custom" type="xs:string" />
+                          <xs:element name="CROSS_CCY_NotExch" />
+                          <xs:element name="CROSS_CCY_ForexRate">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:decimal">
+                                  <xs:attribute name="TYPE" type="xs:string" use="required" />
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="OptionData" type="xs:string" />
+                          <xs:element name="PModel" />
+                          <xs:element name="Style" />
+                          <xs:element name="OPForm" />
+                          <xs:element name="SubIndex" />
+                          <xs:element name="TermDate" type="xs:string" />
+                          <xs:element name="ROLL_RollNature" />
+                          <xs:element name="ROLL_NoticeDays">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:int">
+                                  <xs:attribute name="TYPE" type="xs:string" use="required" />
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="ROLL_ReInvestAmt" />
+                          <xs:element name="FstCpEffect" />
+                          <xs:element name="NextFixing" type="xs:string" />
+                          <xs:element name="RiskId" />
+                          <xs:element name="INT_AVG_Conversion" />
+                          <xs:element name="INT_RES_RefixMode" type="xs:string" />
+                          <xs:element name="INT_AVG_CutOffMeth" />
+                          <xs:element name="Audit_Version">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:unsignedByte">
+                                  <xs:attribute name="TYPE" type="xs:string" use="required" />
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="AMORT_NtlForm" />
+                          <xs:element name="AMORT_Sched_Freq" />
+                          <xs:element name="AMORT_Sched_AnnDay">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:int">
+                                  <xs:attribute name="TYPE" type="xs:string" use="required" />
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="AMORT_Sched_Rule" />
+                          <xs:element name="AMORT_Sched_IntRule" />
+                          <xs:element name="AMORT_Sched_Time" />
+                          <xs:element name="AMORT_Sched_Cal" />
+                          <xs:element name="AMORT_Sched_DRuleID" />
+                          <xs:element name="INTEREST_FundIndex" />
+                          <xs:element name="INTEREST_FundSprd">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:decimal">
+                                  <xs:attribute name="TYPE" type="xs:string" use="required" />
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="MMType" />
+                          <xs:element name="LegRole" type="xs:string" />
+                          <xs:element name="GroupNum">
+                            <xs:complexType>
+                              <xs:attribute name="TYPE" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="NumEve">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute name="TYPE" type="xs:string" use="required" />
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="Formula">
+                            <xs:complexType>
+                              <xs:attribute name="TYPE" type="xs:string" use="required" />
+                              <xs:attribute name="SINGLE" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="Events">
+                            <xs:complexType>
+                              <xs:sequence minOccurs="0">
+                                <xs:element maxOccurs="unbounded" name="EVENT">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Date" type="xs:unsignedInt" />
+                                      <xs:element name="ADate" type="xs:unsignedInt" />
+                                      <xs:element name="LinkEv">
+                                        <xs:complexType>
+                                          <xs:attribute name="TYPE" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="Type" type="xs:string" />
+                                      <xs:element name="Ccy" type="xs:string" />
+                                      <xs:element name="Amount">
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:decimal">
+                                              <xs:attribute name="TYPE" type="xs:string" use="required" />
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="RiskId" />
+                                      <xs:element name="EvStyle">
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:unsignedByte">
+                                              <xs:attribute name="TYPE" type="xs:string" use="required" />
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="BDate" type="xs:unsignedInt" />
+                                      <xs:element name="CDate" type="xs:string" />
+                                      <xs:element name="EventCal" />
+                                      <xs:element name="EventBDRule" />
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute name="TYPE" type="xs:string" use="required" />
+                              <xs:attribute name="SINGLE" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="CmdtyQuoteType" />
+                          <xs:element name="INT_DIV_PayDividend" type="xs:string" />
+                          <xs:element name="INT_DIV_HedgeDivRatio">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:decimal">
+                                  <xs:attribute name="TYPE" type="xs:string" use="required" />
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="INT_RES_AuxDomain" />
+                          <xs:element name="SCHED_Pay_GapDRule" />
+                          <xs:element name="SCHED_Reset_GapDRule" />
+                          <xs:element name="AMORT_Sched_GapDRuleID" />
+                          <xs:element name="AMORT_DRuleID" />
+                          <xs:element name="INT_AVG_Gap" type="xs:string" />
+                          <xs:element name="INT_RES_NTL_Gap" type="xs:string" />
+                          <xs:element name="INT_RES_FX_Gap" type="xs:string" />
+                          <xs:element name="SCHED_Pay_Gap" type="xs:string" />
+                          <xs:element name="SCHED_Reset_Gap" type="xs:string" />
+                          <xs:element name="AMORT_Sched_Gap" />
+                          <xs:element name="INT_DIV_Gap" type="xs:string" />
+                          <xs:element name="ProductName" />
+                          <xs:element name="AccrualFactors" />
+                          <xs:element name="STUB_StartCal" type="xs:string" />
+                          <xs:element name="STUB_EndCal" type="xs:string" />
+                          <xs:element name="STUB_StartSource1" />
+                          <xs:element name="STUB_StartSource2" />
+                          <xs:element name="STUB_EndSource1" />
+                          <xs:element name="STUB_EndSource2" />
+                          <xs:element name="INT_InterimRound" />
+                          <xs:element name="INT_InterimRoundDP">
+                            <xs:complexType>
+                              <xs:attribute name="TYPE" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="INT_RES_ConvRound" />
+                          <xs:element name="INT_RES_ConvRoundDP">
+                            <xs:complexType>
+                              <xs:attribute name="TYPE" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="INT_RES_PaymentReset" />
+                          <xs:element name="INT_RES_CutOffDays">
+                            <xs:complexType>
+                              <xs:attribute name="TYPE" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="INT_RES_NTL_PaymentReset" />
+                          <xs:element name="INT_RES_NTL_CutOffDays">
+                            <xs:complexType>
+                              <xs:attribute name="TYPE" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="INT_RES_FX_PaymentReset" />
+                          <xs:element name="INT_RES_FX_CutOffDays">
+                            <xs:complexType>
+                              <xs:attribute name="TYPE" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="INTEREST_OrgIndex" />
+                          <xs:element name="INTEREST_OrgCcy" />
+                          <xs:element name="INTEREST_OrgSource" />
+                          <xs:element name="OrigMatDate" />
+                          <xs:element name="GapDateRoll" />
+                          <xs:element name="INT_ACC_UseProj" />
+                          <xs:element name="FinNtlExchCal" />
+                          <xs:element name="FinCalAtPay" />
+                          <xs:element name="Deliverable" />
+                          <xs:element name="INT_RES_DorF" />
+                          <xs:element name="PayMethod" />
+                          <xs:element name="RedemFormula">
+                            <xs:complexType>
+                              <xs:attribute name="TYPE" type="xs:string" use="required" />
+                              <xs:attribute name="SINGLE" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="RedemProductName" />
+                          <xs:element name="CfRound" />
+                          <xs:element name="CfRoundDP">
+                            <xs:complexType>
+                              <xs:attribute name="TYPE" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="INTEREST_Method" />
+                          <xs:element name="DENOM_Type" />
+                          <xs:element name="DENOM_Amount">
+                            <xs:complexType>
+                              <xs:attribute name="TYPE" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="DENOM_Round" />
+                          <xs:element name="DENOM_RoundDP">
+                            <xs:complexType>
+                              <xs:attribute name="TYPE" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="INT_ACC_RateType" />
+                          <xs:element name="LoanIntRule" />
+                          <xs:element name="LoanBasis" />
+                          <xs:element name="LoanRate">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:decimal">
+                                  <xs:attribute name="TYPE" type="xs:string" use="required" />
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="LoanStubType" />
+                          <xs:element name="LoanNtlAmortType" />
+                          <xs:element name="PayEvents">
+                            <xs:complexType>
+                              <xs:attribute name="TYPE" type="xs:string" use="required" />
+                              <xs:attribute name="SINGLE" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="AdjFstXNL" />
+                          <xs:element name="FreqDecompType" />
+                          <xs:element name="FreqDecompFreq" />
+                          <xs:element name="StubFreqDecompType" />
+                          <xs:element name="StubFreqDecompFreq" />
+                          <xs:element name="STUB_IgnoreHalfPeriodRule" />
+                          <xs:element name="BusMatDate" type="xs:string" />
+                          <xs:element name="INTEREST_IntRateType" type="xs:string" />
+                          <xs:element name="ROLL_RolloverStatus" />
+                          <xs:element name="SIAsset">
+                            <xs:complexType>
+                              <xs:attribute name="TYPE" type="xs:string" use="required" />
+                              <xs:attribute name="SINGLE" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="NotionalDaysGap" />
+                          <xs:element name="NotionalGapDRuleID" />
+                          <xs:element name="UseIntPayGapRules" type="xs:string" />
+                          <xs:element name="ProdData">
+                            <xs:complexType>
+                              <xs:attribute name="TYPE" type="xs:string" use="required" />
+                              <xs:attribute name="SINGLE" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="RedemProdData">
+                            <xs:complexType>
+                              <xs:attribute name="TYPE" type="xs:string" use="required" />
+                              <xs:attribute name="SINGLE" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="TYPE" type="xs:string" use="required" />
+                  <xs:attribute name="SINGLE" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="SDTradeLink">
+                <xs:complexType>
+                  <xs:attribute name="TYPE" type="xs:string" use="required" />
+                  <xs:attribute name="SINGLE" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Break">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="BREAK">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="TradeId" type="xs:string" />
+                          <xs:element name="dmOwnerTable" type="xs:string" />
+                          <xs:element name="OptionOwner" type="xs:string" />
+                          <xs:element name="ExpStyle" type="xs:string" />
+                          <xs:element name="ExpDate" type="xs:unsignedInt" />
+                          <xs:element name="FirstExpDate" type="xs:unsignedInt" />
+                          <xs:element name="Notes" type="xs:string" />
+                          <xs:element name="NoticePeriod">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="BRKEVENT">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Date" type="xs:unsignedInt" />
+                                      <xs:element name="ADate" type="xs:unsignedInt" />
+                                      <xs:element name="BDate" />
+                                      <xs:element name="CDate" />
+                                      <xs:element name="LinkEv">
+                                        <xs:complexType>
+                                          <xs:attribute name="TYPE" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="Type" />
+                                      <xs:element name="Ccy" />
+                                      <xs:element name="Amount">
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:decimal">
+                                              <xs:attribute name="TYPE" type="xs:string" use="required" />
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="EvStyle">
+                                        <xs:complexType>
+                                          <xs:attribute name="TYPE" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="RiskId" />
+                                      <xs:element name="EventCal" />
+                                      <xs:element name="EventBDRule" />
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute name="TYPE" type="xs:string" use="required" />
+                              <xs:attribute name="SINGLE" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="TYPE" type="xs:string" use="required" />
+                  <xs:attribute name="SINGLE" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="TradeCorpActList">
+                <xs:complexType>
+                  <xs:attribute name="TYPE" type="xs:string" use="required" />
+                  <xs:attribute name="SINGLE" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element maxOccurs="unbounded" name="Flows">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="Cashflow">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Type" type="xs:string" />
+                    <xs:element name="StartDate" type="xs:unsignedInt" />
+                    <xs:element name="EndDate" type="xs:unsignedInt" />
+                    <xs:element name="FixingDate" type="xs:string" />
+                    <xs:element name="NtlFixingDate" />
+                    <xs:element name="FXFixingDate" />
+                    <xs:element name="IntDate" type="xs:unsignedInt" />
+                    <xs:element name="RolIntDate" type="xs:unsignedInt" />
+                    <xs:element name="IntDays" type="xs:unsignedShort" />
+                    <xs:element name="Notional" type="xs:decimal" />
+                    <xs:element name="Rate" type="xs:decimal" />
+                    <xs:element name="EndRate" />
+                    <xs:element name="FXRate" />
+                    <xs:element name="EndFXRate" />
+                    <xs:element name="Spread" />
+                    <xs:element name="Strike" />
+                    <xs:element name="Interest" type="xs:string" />
+                    <xs:element name="Ccy" type="xs:string" />
+                    <xs:element name="ProjInterest" type="xs:decimal" />
+                    <xs:element name="CompInt" />
+                    <xs:element name="IntCcy" type="xs:string" />
+                    <xs:element name="DeferPayDate" />
+                    <xs:element name="Rolled" />
+                    <xs:element name="FlType" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="AssetId" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

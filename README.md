@@ -1,108 +1,86 @@
-hive-jq-udtf
+hive-xsl-udtf
 ============
 
-jq for Hive
+Transform XML into tabular data dynamically in Hive.
+
+Note, this project is a fork of hive-jq-udtf, which is Copyright (c) CyberAgent, Inc. All Rights Reserved.
+
+The below is a very brief introduction. For a full set of worked example and more information, please refer to:
+
+https://github.com/jameskrobinson/hive-xsl-udtf/wiki
 
 Installation
 ------------
 
-1. Build jar with maven and install `target/hive-jq-udtf-$VERSION.jar` into your `hive.aux.jars.path`.
+1. Build jar with maven and install `target/hive-xsl-udtf-$VERSION.jar` into your `hive.aux.jars.path`.
 
    ```
-   mvn clean package -DskipTests
+   mvn clean package
    ```
-
-   Alternatively, you can download the pre-built jar at [Maven Central](http://central.maven.org/maven2/jp/co/cyberagent/hive/hive-jq-udtf-v3/).
-
 2. CREATE FUNCTION
 
    ```sql
-   CREATE FUNCTION jq3 AS 'jp.co.cyberagent.hive.udtf.jsonquery.v3.JsonQueryUDTF';
+   CREATE FUNCTION xsltable AS 'uk.co.lowquay.hive.udtf.xsl.xslUDTF';
    ```
-
-   You can choose whatever name of the function, but we recommend to use `jq<version>` style naming where `<version>` is the version number in the package name. We increment the version number always when we change something that breaks compatibility with the older versions. This allows multiple versions of this plugin to co-exist at the same time when migrating to a newer version, etc.
-
 See [Deploying Jars for User Defined Functions and User Defined SerDes](https://cwiki.apache.org/confluence/display/Hive/HivePlugins#HivePlugins-DeployingJarsforUserDefinedFunctionsandUserDefinedSerDes) section of the official Hive documentation for more deployment details.
 
 ### Requirements
 
 * Java 1.8
 * [Apache Hive](https://hive.apache.org/) >= 1.1.0
+* Saxon version 9.x
+* XSL stylesheets and / or XSD templates that correspond to your XML
 
 Usage
 -----
 
-There are two variants (i.e. overloads) of the UDTF:
+###Basic usage:
 
-* `jq(JSON, JQ, TYPE)`
-* `jq(JSON, JQ, FIELD_1:TYPE_1, ..., FIELD_N:TYPE_N)`
+* `xsltable(XML, XSL_FILE_PATH, PARAM_1...PARAM_N`
+* The UDTF will execute the transformation in the XSL_FILE_PATH file for each incoming row of XML and return a single consolidated results set.
+* XSL_FILE_PATH must be local, eg /home/user/xslfile.xsl
+* Parameters are optional, and are passed to the XSL template. They are specific as 'PARAM=VALUE'
+* There are three parameters which affect the functional of the UDTF:
 
-The UDTF parses `JSON` text and feed it to a `JQ` filter, which in turn produces 0 or more results. The filter results are still JSON, so the UDTF converts each of the results to a row suitable in Hive.
-This final conversion process differs slightly depending on which variant to use.
+ROW_SEP - this lets a user specify how the UDTF should delimit results. Default is NEWLINE;
+COL_SEP - this lets a user specify how the UDTF should delimit field. Default is TAB;
+OUTPUT_FORMAT - this lets a user specify Saxon's output format; Default is text;
 
-Note that `JQ`, `TYPE` and `FIELD_N:TYPE_N` must be a **constant** string (or a constant expression which evaluates to a string).
+Example:
+````
+select 
+   xsltable(xml_text,
+   '/home/james_k_robinson/xsl/generic_xml_to_csv.xsl', 
+   'COL_SEP=,',
+   'NODE_LEVEL=EVENT',
+   'DEEP_COPY=NO') 
+from 
+   summit.trade_xml t 
+where
+   t.trade_id = '123456LQ'
+````
 
-### jq(JSON, JQ, TYPE)
+In this case, NODE_LEVEL and DEEP_COPY are passed to the XSL template.
 
-This variant converts each `JQ` result to a Hive row containing a single `TYPE` column.
+Note that `XSL_FILE_PATH` must be a constant - you can't pass this in as a parameter (yet!)
 
-#### Example
+###XSD Usage:
 
-1. Extracting a single integer from JSON.
+* `xsltable(XML, XSD_FILE_PATH, PARAM_1...PARAM_N`
+* As above, except the UDTF will pre-process an XSD file and auto-generate XSL. See full details of this process here:
 
-   ```sql
-   SELECT jq('{"region": "Asia", "timezones": [{"name": "Tokyo", "offset": 540}, {"name": "Taipei", "offset": 480}, {"name": "Kamchatka", "offset": 720}]}',
-              '.timezones[]|select(.name == "Tokyo").offset',
-              'int');
-   ```
-   ```
-   +-------+
-   | col1  |
-   +-------+
-   | 540   |
-   +-------+
-   ```
+https://github.com/jameskrobinson/hive-xsl-udtf/wiki/Example-5.-Dynamic-schema-on-read
 
-2. `JQ` is allowed to produce more than one results and the UDTF also supports more complex types.
-
-   ```sql
-   SELECT jq('{"region": "Asia", "timezones": [{"name": "Tokyo", "offset": 540}, {"name": "Taipei", "offset": 480}, {"name": "Kamchatka", "offset": 720}]}',
-              '.region as $region | .timezones[] | {name: ($region + "/" + .name), offset}',
-              'struct<name:string,offset:int>');
-   ```
-   ```
-   +-----------------------------------------+
-   |                  col1                   |
-   +-----------------------------------------+
-   | {"name":"Asia/Tokyo","offset":540}      |
-   | {"name":"Asia/Taipei","offset":480}     |
-   | {"name":"Asia/Kamchatka","offset":720}  |
-   +-----------------------------------------+
-   ```
-
-### jq(JSON, JQ, FIELD_1:TYPE_1, ..., FIELD_N:TYPE_N)
-
-This variant can produce rows with more than one columns (`FIELD_1`,..., `FIELD_N`).
-The fields (`FIELD_1`, ..., `FIELD_N`) of the `JQ` result are individually converted to respective Hive types (`TYPE_1`, ..., `TYPE_N`), which eventually assemble to a Hive row.
-
-#### Example
-
-1. Transforming a JSON into Hive rows with multiple columns.
-
-   ```sql
-   SELECT jq('{"region": "Asia", "timezones": [{"name": "Tokyo", "offset": 540}, {"name": "Taipei", "offset": 480}, {"name": "Kamchatka", "offset": 720}]}',
-              '.region as $region | .timezones[] | {name: ($region + "/" + .name), offset}',
-              'name:string', 'offset:int');
-   ```
-   ```
-   +-----------------+---------+
-   |      name       | offset  |
-   +-----------------+---------+
-   | Asia/Tokyo      | 540     |
-   | Asia/Taipei     | 480     |
-   | Asia/Kamchatka  | 720     |
-   +-----------------+---------+
-   ```
+````
+select 
+   xsltable(xml_text,
+   '/home/james_k_robinson/xsd/iso20022/camt.053.001.02.xsd', 
+   'NODE_LEVEL=Ntry',
+   'NODE_TYPE=ReportEntry2', 
+   'DEEP_COPY=NO')
+from 
+   iso.camt53_xml;
+````
 
 ### Using lateral views
 
@@ -110,83 +88,38 @@ The fields (`FIELD_1`, ..., `FIELD_N`) of the `JQ` result are individually conve
 > A lateral view first applies the UDTF to each row of base table and then joins resulting output rows to the input rows to form a virtual table having the supplied table alias. &mdash; <cite>[Hive Language Manual, Lateral View][1]</cite>
 
 #### Example
+````
+select 
+   t.*,
+   x.* 
+from 
+   summit.trade_xml t 
+   LATERAL VIEW xsltable(xml_text,'/home/james_k_robinson/xsl/EVENT_to_csv.xsl') x 
+   where t.trade_id = '123456LQ' and x.asset_pors = 'S';
+````
 
-```sql
--- Prepare `regions` table for LATERAL VIEW example
-CREATE TABLE regions (region STRING, timezones STRING);
-INSERT INTO regions (region, timezones) VALUES ('Asia', '[{"name":"Tokyo","offset":540},{"name":"Taipei","offset":480},{"name":"Kamchatka","offset":720}]');
-```
+###Data conversion errors
 
-```sql
-SELECT r.region, tz.name, tz.offset FROM regions r LATERAL VIEW jq(r.timezones, '.[]', 'name:string', 'offset:int') tz;
-```
-```
-+-----------+------------+------------+
-| r.region  |  tz.name   | tz.offset  |
-+-----------+------------+------------+
-| Asia      | Tokyo      | 540        |
-| Asia      | Taipei     | 480        |
-| Asia      | Kamchatka  | 720        |
-+-----------+------------+------------+
-```
+The UDTF will attempt to handle any errors in retrieving / coverting data gracefully. An error count and error narrative is returned per row, in columns  udtfrowstatus and udtfrownarrative.
+If udtfrowstatus = 0, no errors have occurred.
 
-### Handling corrupt JSON inputs
+###Column headers and types
+Column hearder and types are specified in the XLT file, as a comment. See example below - this format must be adhered to.
 
-If the UDTF fails to parse JSON, jq input (`.`) becomes `null` and `$error` object is set to something like below.
+`<!--HiveHeaders:TradeId:string, dmOwnerTable:string, OptionOwner:string, ExpStyle:string, ExpDate:string, FirstExpDate:string, Notes:string, NoticePeriod:string -->`
 
-```javascript
-{
-  "message": "Unrecognized token 'string': was expecting ('true', 'false' or 'null')\n at [Source: \"corrupt \"string; line: 1, column: 33]",
-  "class": "jp.co.cyberagent.hive.udtf.jsonquery.v3.shade.com.fasterxml.jackson.core.JsonParseException",
-  "input": "\"corrupt \"string"
-}
-```
+If no HiveHeader string is found, all fields are returned in a single string column, called col1.
 
-#### Example
-
-1. To substitute something in case of a currupt JSON,
-
-   ```sql
-   SELECT jq('"corrupt "string', 'if $error then "INVALID" else . end', 'string');
-   ```
-   ```
-   +----------+
-   |   col1   |
-   +----------+
-   | INVALID  |
-   +----------+
-   ```
-
-2. To skip a corrupt JSON,
-
-   ```sql
-   SELECT jq('"corrupt "string', 'if $error then empty else . end', 'string');
-   ```
-   ```
-   +----------+
-   |   col1   |
-   +----------+
-   +----------+
-   ```
-
-3. To abort a query on a corrupt JSON,
-
-   ```sql
-   SELECT jq('"corrupt "string', 'if $error then error($error.message) else . end', 'string');
-   ```
-   ```
-   Error: java.io.IOException: org.apache.hadoop.hive.ql.metadata.HiveException: jq returned an error "Unrecognized token 'string': was expecting ('true', 'false' or 'null')  at [Source: "corrupt "string; line: 1, column: 33]" from input: "corrupt "string (state=,code=0)
-   ```
 
 ### Supported Hive types
 
 * `int`, `bigint`, `float`, `double`, `boolean`, `string`
-* `struct<...>`, `array<T>`, `map<string, T>`
 
 License
 -------
 
-Copyright (c) CyberAgent, Inc. All Rights Reserved.
+All original code copyright (c) CyberAgent, Inc. All Rights Reserved.
+XSL templates, XSL unit tests and XSL processing extentions to the original code copyright (c) James Robinson. All Rights Reserved.
 
 [The Apache License, Version 2.0](LICENSE)
 

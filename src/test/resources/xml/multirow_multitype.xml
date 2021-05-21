@@ -1,0 +1,25 @@
+<xml><top>
+<blah>12345</blah>
+<hello>hello</hello>
+<float>0.1</float>
+<double>0.3</double>
+<bigint>9223372036854775807</bigint>
+<boolean>TRUE</boolean>
+</top>
+<top>
+<blah>45678</blah>
+<hello>goodbye</hello>
+<float>0.1</float>
+<double>0.321</double>
+<bigint>9223372036854775801</bigint>
+<boolean>TRUE</boolean>
+</top>
+<top>
+<blah>78901</blah>
+<hello>really, goodbye</hello>
+<float>0.1</float>
+<double>0.3</double>
+<bigint>123</bigint>
+<boolean>FALSE</boolean>
+</top>
+</xml>

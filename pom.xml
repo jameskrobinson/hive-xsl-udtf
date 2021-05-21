@@ -5,14 +5,15 @@
 		<maven>3.0.4</maven>
 	</prerequisites>
 
-	<groupId>jp.co.cyberagent.hive</groupId>
-	<artifactId>hive-jq-udtf-v3</artifactId>
-	<version>3.0.0</version>
+	<groupId>uk.co.lowquay.hive</groupId>
+	<artifactId>hive-xsl-udtf</artifactId>
+	<version>1.0.0</version>
 	<packaging>jar</packaging>
 	<name>${project.artifactId}</name>
-	<description>jq for Apache Hive</description>
-	<url>https://github.com/CyberAgent/hive-jq-udtf</url>
+	<description>XSL for Apache Hive</description>
+	<url>https://github.com/to_be_replaced</url>
 
+	<!--
 	<scm>
 		<connection>scm:git:git@github.com:CyberAgent/hive-jq-udtf.git</connection>
 		<developerConnection>scm:git:git@github.com:CyberAgent/hive-jq-udtf.git</developerConnection>
@@ -27,7 +28,7 @@
 			<organizationUrl>https://www.cyberagent.co.jp/en/</organizationUrl>
 		</developer>
 	</developers>
-
+	-->
 	<licenses>
 		<license>
 			<name>Apache License, Version 2.0</name>
@@ -44,7 +45,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.version.major>3</project.version.major>
+		<project.version.major>1</project.version.major>
 		<org.apache.hive-version>2.1.0</org.apache.hive-version>
 		<net.thisptr.jackson-jq-version>0.0.7</net.thisptr.jackson-jq-version>
 	</properties>
@@ -83,6 +84,23 @@
 			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>net.sf.saxon</groupId>
+			<artifactId>Saxon-HE</artifactId>
+			<version>10.3</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.antlr</groupId>
+			<artifactId>antlr-runtime</artifactId>
+			<version>3.4</version>
+		</dependency>
+		<dependency>
+			<groupId>com.esotericsoftware.kryo</groupId>
+			<artifactId>kryo</artifactId>
+			<version>2.21</version>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -100,17 +118,17 @@
 						<configuration>
 							<relocations>
 								<relocation>
-									<pattern>^jp/co/cyberagent/hive/udtf/jsonquery/(?!v${project.version.major})</pattern>
-									<shadedPattern>jp/co/cyberagent/hive/udtf/jsonquery/v${project.version.major}/</shadedPattern>
+									<pattern>^uk/co/lowquay/hive/udtf/xslquery/(?!v${project.version.major})</pattern>
+									<shadedPattern>uk/co/lowquay/hive/udtf/xslquery/v${project.version.major}/</shadedPattern>
 									<rawString>true</rawString>
 								</relocation>
 								<relocation>
 									<pattern>net.thisptr.jackson.jq</pattern>
-									<shadedPattern>jp.co.cyberagent.hive.udtf.jsonquery.v${project.version.major}.shade.net.thisptr.jackson.jq</shadedPattern>
+									<shadedPattern>uk.co.lowquay.hive.udtf.xslquery.v${project.version.major}.shade.net.thisptr.jackson.jq</shadedPattern>
 								</relocation>
 								<relocation>
 									<pattern>com.fasterxml.jackson</pattern>
-									<shadedPattern>jp.co.cyberagent.hive.udtf.jsonquery.v${project.version.major}.shade.com.fasterxml.jackson</shadedPattern>
+									<shadedPattern>uk.co.lowquay.hive.udtf.xslquery.v${project.version.major}.shade.com.fasterxml.jackson</shadedPattern>
 								</relocation>
 							</relocations>
 							<transformers>

@@ -7,7 +7,7 @@ Note, this project is a fork of hive-jq-udtf, which is Copyright (c) CyberAgent,
 
 The below is a very brief introduction. For a full set of worked example and more information, please refer to:
 
-https://github.com/jameskrobinson/hive-xsl-udtf/wiki
+https://github.com/jameskrobinson/hive-xsl-udtf/wiki/Hive-XSL-UDTF-Home
 
 Installation
 ------------

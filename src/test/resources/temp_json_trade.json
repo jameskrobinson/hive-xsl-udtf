@@ -1,0 +1,2173 @@
+{
+	"SWAP": {
+		"TradeId": "123456LQ",
+		"TradeType": "SWAP",
+		"Env": {
+			"TYPE": "EntList",
+			"SINGLE": "Y",
+			"ENV": {
+				"Audit_Id": "00001234",
+				"Audit_Table": "SWAP",
+				"Audit_Version": {
+					"TYPE": "Numeric",
+					"$": 58
+				},
+				"Audit_Current": "Y",
+				"Audit_EntityState": "VER",
+				"Audit_Authorized": "Y",
+				"Audit_PendingAction": null,
+				"Audit_PendingState": null,
+				"Audit_IsHistory": "N",
+				"Audit_User": "robinsoj",
+				"Audit_Action": "ACCEPT",
+				"Audit_DateTime": "20070604 13:00:05",
+				"Audit_ExtStateName": "Verified",
+				"Audit_StateId": {
+					"TYPE": "Numeric"
+				},
+				"dmOwnerTable": "SWAP",
+				"TradeId": "123456LQ",
+				"InputDate": 20000128,
+				"InputTime": "15:02:46",
+				"Cust": "DUMMY",
+				"Company": "LQBANK",
+				"BookedBy": null,
+				"BookedFor": null,
+				"BookSpr": {
+					"TYPE": "Numeric"
+				},
+				"BookCcy": null,
+				"BookFee": {
+					"TYPE": "Numeric"
+				},
+				"BookFeeDate": null,
+				"RC": null,
+				"Book": "LQBOOK",
+				"RCSpread": {
+					"TYPE": "Numeric"
+				},
+				"Trader": "JAMES",
+				"Broker": "NOBROKER",
+				"Contact": null,
+				"Desk": "RATES",
+				"Folder": "RPIRATES",
+				"DealId": null,
+				"TradeDate": 19991220,
+				"TradeStatus": "VER",
+				"RCTrade": "N",
+				"ProductGroup": "RPI",
+				"ProductType": "IRS",
+				"BackDated": "Y",
+				"FinalMaturity": null,
+				"ProjectId": null,
+				"IsMirror": "N",
+				"PayMethod": null,
+				"Comment1": "REC LEG RPI BASED FOR PAYMENTS 01\/06\/01 - 01\/03\/02",
+				"Comment2": "REC LEG RPI BASED FOR PAYMENTS 01\/06\/01 - 01\/03\/02",
+				"LastUpdate": "20070604 13:31:05",
+				"MarketerId": "NOMKTR",
+				"NumSSI": {
+					"TYPE": "Numeric"
+				},
+				"MirrorSchemeId": null,
+				"StructureId": null,
+				"ViewName": null,
+				"FacilityId": null,
+				"TrancheId": null,
+				"LoanId": null,
+				"LFType": null,
+				"LoanCcy": null,
+				"ParentOwnerTable": null,
+				"ParentTradeId": null,
+				"SyndicatedLoan": "N",
+				"Breakable": "Y",
+				"SsiInstr": {
+					"TYPE": "EntList",
+					"SINGLE": "N"
+				},
+				"UltBeneficiary": null,
+				"CreditRisk": "N",
+				"TradeEntryDate": 19991220,
+				"SIProductID": null
+			}
+		},
+		"Back": {
+			"TYPE": "EntList",
+			"SINGLE": "Y",
+			"BACK": {
+				"dmOwnerTable": "SWAP",
+				"TradeId": "123456LQ",
+				"ExtTradeId": "SW33445",
+				"SummitId": null,
+				"OldId": null,
+				"Code": null,
+				"PendingUser": "NA",
+				"PendingDate": 19991220,
+				"PendingTime": "00:00:00",
+				"DoneUser": "robinsoa",
+				"DoneDate": 19991220,
+				"DoneTime": "00:00:00",
+				"VerifyUser": "svcsummit",
+				"VerifyDate": 20000128,
+				"VerifyTime": "00:00:00",
+				"CancelUser": null,
+				"CancelDate": null,
+				"CancelTime": "00:00:00",
+				"AmendUser": "robinsoj",
+				"AmendDate": 20070604,
+				"AmendTime": "20070604 13:00:00",
+				"ConfirmExec": "N",
+				"CollateralHeld": "N",
+				"CollateralAmt": {
+					"TYPE": "Numeric"
+				},
+				"TermTradeDate": null,
+				"TermEffDate": null,
+				"TermInputDate": null,
+				"OrigMatDate": null,
+				"OrigNotional": {
+					"TYPE": "Numeric"
+				},
+				"Street": null,
+				"NetSettle": "Y",
+				"TermAssignStatus": null,
+				"SchemaId": "LQ_MTM_IRS",
+				"TrAcctType": "TRADING",
+				"CommonRef": "BLING",
+				"AssignTo": null,
+				"AssignFrom": null,
+				"Audit_Version": {
+					"TYPE": "Numeric",
+					"$": 58
+				},
+				"TradeNetting": "N",
+				"ThresholdCcy": null,
+				"ThresholdAmount": {
+					"TYPE": "Numeric"
+				},
+				"ExerciseTo": null,
+				"ExerciseOwnerTable": null,
+				"SecId": null,
+				"SecType": null,
+				"SecCcy": null,
+				"MergeTradeId": null,
+				"EuroConversionDate": "     SUN",
+				"OurSettlementCountry": null,
+				"CustSettlementCountry": null,
+				"PositionType": null,
+				"NetSettlement": null,
+				"NetCredit": null,
+				"MAFormat": null,
+				"MAStyle": null,
+				"ExternalUser": null,
+				"ExtSystem": null,
+				"SSIOpsCode": null,
+				"ContOpsCode": null,
+				"NavOpsCode": null,
+				"AggressorFlag": null,
+				"MatchingId": null,
+				"OrigEffectDate": null,
+				"ExtVersion": {
+					"TYPE": "Numeric"
+				},
+				"SsiByEvent": "N",
+				"CLSSettlement": "N",
+				"CSD": null,
+				"CSD_AuditId": null,
+				"MirrorData": {
+					"TYPE": "EntList",
+					"SINGLE": "Y"
+				}
+			}
+		},
+		"TrSsiPairs": {
+			"TYPE": "EntList",
+			"SINGLE": "N"
+		},
+		"Assets": {
+			"TYPE": "EntList",
+			"SINGLE": "N",
+			"ASSET": [{
+				"dmAssetId": "00045678",
+				"dmOwnerTable": "SWAP",
+				"TradeId": "123456LQ",
+				"SchedEvents": {
+					"TYPE": "EntList",
+					"SINGLE": "N"
+				},
+				"Type": "SWAP",
+				"SubType": "IRSWAP",
+				"RC": "TBC",
+				"Book": "LQBOOK",
+				"PorS": "P",
+				"EffDate": 20010301,
+				"MatDate": 20080301,
+				"Notional": {
+					"TYPE": "Numeric",
+					"$": 3457500.0
+				},
+				"NotExp": null,
+				"Ccy": "GBP",
+				"STUB_Date1": null,
+				"STUB_Rate1": {
+					"TYPE": "Numeric",
+					"$": 0.0
+				},
+				"STUB_Date2": null,
+				"STUB_Rate2": {
+					"TYPE": "Numeric",
+					"$": 0.0
+				},
+				"STUB_StubType": null,
+				"STUB_Decomp": "Y",
+				"STUB_CompMode": null,
+				"STUB_Rounding": {
+					"TYPE": "Numeric"
+				},
+				"STUB_InterpStyle": "E",
+				"STUB_StartTerm1": null,
+				"STUB_StartTerm2": null,
+				"STUB_EndTerm1": null,
+				"STUB_EndTerm2": null,
+				"ResetInStub": "N",
+				"INTEREST_IndexForm": null,
+				"INTEREST_YldFreq": null,
+				"INTEREST_FixFloat": "FLO",
+				"INTEREST_Rate": {
+					"TYPE": "Numeric",
+					"$": 0.0
+				},
+				"INTEREST_Basis": "30\/360",
+				"INTEREST_dmIndex": "FORM",
+				"INTEREST_Ccy": "GBP",
+				"INT_REF_OrgSource": null,
+				"INT_REF_Source": "UKRPIBBG",
+				"INT_REF_NNearBy": {
+					"TYPE": "Numeric",
+					"$": -200000
+				},
+				"INTEREST_Spread": {
+					"TYPE": "Numeric",
+					"$": 0.0
+				},
+				"INTEREST_Term": null,
+				"INT_AVG_Type": null,
+				"INT_AVG_Freq": null,
+				"INT_AVG_Compound": "N",
+				"INT_AVG_AnnDay": {
+					"TYPE": "Numeric",
+					"$": -200000
+				},
+				"INT_AVG_Rule": "MF",
+				"INT_AVG_Spread": null,
+				"INT_AVG_Time": null,
+				"INT_AVG_CutOffDays": {
+					"TYPE": "Numeric"
+				},
+				"INT_AVG_CorBGap": "B",
+				"INTEREST_DType": null,
+				"INTEREST_Round": null,
+				"INTEREST_RoundDP": {
+					"TYPE": "Numeric",
+					"$": -200000
+				},
+				"INT_RES_Rule": null,
+				"INT_RES_Time": null,
+				"INT_RES_Round": null,
+				"INT_RES_RoundDP": {
+					"TYPE": "Numeric"
+				},
+				"INT_RES_NTL_REF_OrgSource": null,
+				"INT_RES_NTL_REF_Source": null,
+				"INT_RES_NTL_REF_NNearBy": {
+					"TYPE": "Numeric",
+					"$": -200000
+				},
+				"INT_RES_NTL_Cal": null,
+				"INT_RES_NTL_Term": null,
+				"INT_RES_FX_REF_OrgSource": null,
+				"INT_RES_FX_REF_Source": null,
+				"INT_RES_FX_REF_NNearBy": {
+					"TYPE": "Numeric",
+					"$": -200000
+				},
+				"INT_RES_FX_Cal": null,
+				"INT_RES_FX_Term": null,
+				"INT_RES_FxDomain": null,
+				"INT_ACC_AccCalc": "N",
+				"INT_ACC_Method": null,
+				"INT_ACC_ForL": null,
+				"INT_ACC_Basis": "PRICE",
+				"INTEREST_FwdDecomp": "Y",
+				"INT_DIV_Ratio": {
+					"TYPE": "Numeric",
+					"$": 0.0
+				},
+				"INT_DIV_ReInvest": "N",
+				"INT_DIV_DivMethod": null,
+				"INTEREST_NRate": {
+					"TYPE": "Numeric",
+					"$": 0.0
+				},
+				"INTEREST_NonContig": "N",
+				"INTEREST_UnderIndex": "RPI",
+				"SCHED_Pay_Freq": "Q",
+				"SCHED_Pay_AnnDay": {
+					"TYPE": "Numeric",
+					"$": 1
+				},
+				"SCHED_Pay_Rule": "MF",
+				"SCHED_Pay_IntRule": "N",
+				"SCHED_Pay_Time": "ARR",
+				"SCHED_Pay_Cal": "012",
+				"SCHED_Pay_DRule": null,
+				"SCHED_Reset_Freq": "Q",
+				"SCHED_Reset_AnnDay": {
+					"TYPE": "Numeric",
+					"$": 1
+				},
+				"SCHED_Reset_Rule": "MF",
+				"SCHED_Reset_IntRule": "N",
+				"SCHED_Reset_Time": "ADV",
+				"SCHED_Reset_Cal": "LON",
+				"SCHED_Reset_DRule": null,
+				"COMP_CompFreq": null,
+				"COMP_Mode": null,
+				"AMORT_Type": null,
+				"AMORT_Amount": {
+					"TYPE": "Numeric"
+				},
+				"AMORT_Start": null,
+				"AMORT_End": null,
+				"AMORT_Freq": null,
+				"Custom": "CUST",
+				"CROSS_CCY_NotExch": null,
+				"CROSS_CCY_ForexRate": {
+					"TYPE": "Numeric",
+					"$": 0.0
+				},
+				"OptionData": "N",
+				"PModel": null,
+				"Style": null,
+				"OPForm": null,
+				"SubIndex": null,
+				"TermDate": null,
+				"ROLL_RollNature": null,
+				"ROLL_NoticeDays": {
+					"TYPE": "Numeric",
+					"$": -200000
+				},
+				"ROLL_ReInvestAmt": null,
+				"FstCpEffect": null,
+				"NextFixing": 20070903,
+				"RiskId": null,
+				"INT_AVG_Conversion": null,
+				"INT_RES_RefixMode": "MAN",
+				"INT_AVG_CutOffMeth": null,
+				"Audit_Version": {
+					"TYPE": "Numeric",
+					"$": 58
+				},
+				"AMORT_NtlForm": null,
+				"AMORT_Sched_Freq": null,
+				"AMORT_Sched_AnnDay": {
+					"TYPE": "Numeric",
+					"$": -200000
+				},
+				"AMORT_Sched_Rule": null,
+				"AMORT_Sched_IntRule": null,
+				"AMORT_Sched_Time": null,
+				"AMORT_Sched_Cal": null,
+				"AMORT_Sched_DRuleID": null,
+				"INTEREST_FundIndex": null,
+				"INTEREST_FundSprd": {
+					"TYPE": "Numeric",
+					"$": 0.0
+				},
+				"MMType": null,
+				"LegRole": "ALL",
+				"GroupNum": {
+					"TYPE": "Numeric",
+					"$": -200000
+				},
+				"NumEve": {
+					"TYPE": "Numeric",
+					"$": 57
+				},
+				"Formula": {
+					"TYPE": "EntList",
+					"SINGLE": "N",
+					"FORMULA": [{
+						"Date": 20010301,
+						"FormulaId": null,
+						"Formula": {
+							"TYPE": "ObjRef",
+							"$": "( RPI_RATE_FORM ( [1mGBPrpi], 20010430 ) \/ 1.526 - 1 )"
+						},
+						"RedempType": null
+					}, {
+						"Date": 20020301,
+						"FormulaId": null,
+						"Formula": {
+							"TYPE": "ObjRef",
+							"$": "( RPI_RATE_FORM ( [1mGBPrpi], 20020430 ) \/ 1.526 - 1 )"
+						},
+						"RedempType": null
+					}, {
+						"Date": 20030301,
+						"FormulaId": null,
+						"Formula": {
+							"TYPE": "ObjRef",
+							"$": "( RPI_RATE_FORM ( [1mGBPrpi], 20030430 ) \/ 1.526 - 1 )"
+						},
+						"RedempType": null
+					}, {
+						"Date": 20040301,
+						"FormulaId": null,
+						"Formula": {
+							"TYPE": "ObjRef",
+							"$": "( RPI_RATE_FORM ( [1mGBPrpi], 20040430 ) \/ 1.526 - 1 )"
+						},
+						"RedempType": null
+					}, {
+						"Date": 20050301,
+						"FormulaId": null,
+						"Formula": {
+							"TYPE": "ObjRef",
+							"$": "( RPI_RATE_FORM ( [1mGBPrpi], 20050430 ) \/ 1.526 - 1 )"
+						},
+						"RedempType": null
+					}, {
+						"Date": 20060301,
+						"FormulaId": null,
+						"Formula": {
+							"TYPE": "ObjRef",
+							"$": "( RPI_RATE_FORM ( [1mGBPrpi], 20060430 ) \/ 1.526 - 1 )"
+						},
+						"RedempType": null
+					}, {
+						"Date": 20070301,
+						"FormulaId": null,
+						"Formula": {
+							"TYPE": "ObjRef",
+							"$": "( RPI_RATE_FORM ( [1mGBPrpi], 20070430 ) \/ 1.526 - 1 )"
+						},
+						"RedempType": null
+					}]
+				},
+				"Events": {
+					"TYPE": "EntList",
+					"SINGLE": "N",
+					"EVENT": [{
+						"Date": 20010301,
+						"ADate": 20010301,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "NTL",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": -3457500.0
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric"
+						},
+						"BDate": "     SUN",
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20010301,
+						"ADate": null,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "OFF",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 0.0
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric"
+						},
+						"BDate": "     SUN",
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20010301,
+						"ADate": 20010301,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "FRC",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 1.731
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric",
+							"$": 2
+						},
+						"BDate": 20030303,
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20010601,
+						"ADate": null,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "OFF",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 0.0
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric"
+						},
+						"BDate": "     SUN",
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20010601,
+						"ADate": 20010601,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "FRC",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 1.731
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric",
+							"$": 2
+						},
+						"BDate": 20030303,
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20010901,
+						"ADate": null,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "OFF",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 0.0
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric"
+						},
+						"BDate": "     SUN",
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20010901,
+						"ADate": 20010903,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "FRC",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 1.731
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric",
+							"$": 2
+						},
+						"BDate": 20030303,
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20011201,
+						"ADate": null,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "OFF",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 0.0
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric"
+						},
+						"BDate": "     SUN",
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20011201,
+						"ADate": 20011203,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "FRC",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 1.731
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric",
+							"$": 2
+						},
+						"BDate": 20030303,
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20020301,
+						"ADate": null,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "OFF",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 0.0
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric"
+						},
+						"BDate": "     SUN",
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20020301,
+						"ADate": 20020301,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "FRC",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 1.757
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric",
+							"$": 2
+						},
+						"BDate": 20030303,
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20020601,
+						"ADate": null,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "OFF",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 0.0
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric"
+						},
+						"BDate": "     SUN",
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20020601,
+						"ADate": 20020605,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "FRC",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 1.757
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric",
+							"$": 2
+						},
+						"BDate": 20030303,
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20020901,
+						"ADate": null,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "OFF",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 0.0
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric"
+						},
+						"BDate": "     SUN",
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20020901,
+						"ADate": 20020902,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "FRC",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 1.757
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric",
+							"$": 2
+						},
+						"BDate": 20030303,
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20021201,
+						"ADate": null,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "OFF",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 0.0
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric"
+						},
+						"BDate": "     SUN",
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20021201,
+						"ADate": 20021202,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "FRC",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 1.757
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric",
+							"$": 2
+						},
+						"BDate": 20030303,
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20030301,
+						"ADate": null,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "OFF",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 0.0
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric"
+						},
+						"BDate": "     SUN",
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20030301,
+						"ADate": 20030527,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "FRC",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 1.812
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric",
+							"$": 2
+						},
+						"BDate": 20030520,
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20030601,
+						"ADate": null,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "OFF",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 0.0
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric"
+						},
+						"BDate": "     SUN",
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20030601,
+						"ADate": 20030602,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "FRC",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 1.812
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric",
+							"$": 2
+						},
+						"BDate": 20030520,
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20030901,
+						"ADate": null,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "OFF",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 0.0
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric"
+						},
+						"BDate": "     SUN",
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20030901,
+						"ADate": 20030901,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "FRC",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 1.812
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric",
+							"$": 2
+						},
+						"BDate": 20030520,
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20031201,
+						"ADate": null,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "OFF",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 0.0
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric"
+						},
+						"BDate": "     SUN",
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20031201,
+						"ADate": 20031201,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "FRC",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 1.812
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric",
+							"$": 2
+						},
+						"BDate": 20030520,
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20040301,
+						"ADate": null,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "OFF",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 0.0
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric"
+						},
+						"BDate": "     SUN",
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20040301,
+						"ADate": 20040525,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "FRC",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 1.857
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric",
+							"$": 2
+						},
+						"BDate": 20040518,
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20040601,
+						"ADate": null,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "OFF",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 0.0
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric"
+						},
+						"BDate": "     SUN",
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20040601,
+						"ADate": 20040601,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "FRC",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 1.857
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric",
+							"$": 2
+						},
+						"BDate": 20040518,
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20040901,
+						"ADate": null,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "OFF",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 0.0
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric"
+						},
+						"BDate": "     SUN",
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20040901,
+						"ADate": 20040901,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "FRC",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 1.857
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric",
+							"$": 2
+						},
+						"BDate": 20040518,
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20041201,
+						"ADate": null,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "OFF",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 0.0
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric"
+						},
+						"BDate": "     SUN",
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20041201,
+						"ADate": 20041201,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "FRC",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 1.857
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric",
+							"$": 2
+						},
+						"BDate": 20040518,
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20050301,
+						"ADate": null,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "OFF",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 0.0
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric"
+						},
+						"BDate": "     SUN",
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20050301,
+						"ADate": 20050525,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "FRC",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 1.916
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric",
+							"$": 2
+						},
+						"BDate": 20050517,
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20050601,
+						"ADate": null,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "OFF",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 0.0
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric"
+						},
+						"BDate": "     SUN",
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20050601,
+						"ADate": 20050601,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "FRC",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 1.916
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric",
+							"$": 2
+						},
+						"BDate": 20050601,
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20050901,
+						"ADate": null,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "OFF",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 0.0
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric"
+						},
+						"BDate": "     SUN",
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20050901,
+						"ADate": 20050901,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "FRC",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 1.916
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric",
+							"$": 2
+						},
+						"BDate": 20050517,
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20051201,
+						"ADate": null,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "OFF",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 0.0
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric"
+						},
+						"BDate": "     SUN",
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20051201,
+						"ADate": 20051201,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "FRC",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 1.916
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric",
+							"$": 2
+						},
+						"BDate": 20050517,
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20060301,
+						"ADate": null,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "OFF",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 0.0
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric"
+						},
+						"BDate": "     SUN",
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20060301,
+						"ADate": 20060525,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "FRC",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 1.965
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric",
+							"$": 2
+						},
+						"BDate": 20060525,
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20060601,
+						"ADate": null,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "OFF",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 0.0
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric"
+						},
+						"BDate": "     SUN",
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20060601,
+						"ADate": 20060601,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "FRC",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 1.965
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric",
+							"$": 2
+						},
+						"BDate": 20060525,
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20060901,
+						"ADate": null,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "OFF",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 0.0
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric"
+						},
+						"BDate": "     SUN",
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20060901,
+						"ADate": 20060901,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "FRC",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 1.965
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric",
+							"$": 2
+						},
+						"BDate": 20060525,
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20061201,
+						"ADate": null,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "OFF",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 0.0
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric"
+						},
+						"BDate": "     SUN",
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20061201,
+						"ADate": 20061201,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "FRC",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 1.965
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric",
+							"$": 2
+						},
+						"BDate": 20060525,
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20070301,
+						"ADate": null,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "OFF",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 0.0
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric"
+						},
+						"BDate": "     SUN",
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20070301,
+						"ADate": 20070525,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "FRC",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 2.054
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric",
+							"$": 2
+						},
+						"BDate": 20070525,
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20070601,
+						"ADate": null,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "OFF",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 0.0
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric"
+						},
+						"BDate": "     SUN",
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20070601,
+						"ADate": 20070601,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "FRC",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 2.054
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric",
+							"$": 2
+						},
+						"BDate": 20070604,
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20070901,
+						"ADate": 20070903,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "ROF",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 0.0
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric"
+						},
+						"BDate": "     SUN",
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20071201,
+						"ADate": 20071203,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "ROF",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 0.0
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric"
+						},
+						"BDate": "     SUN",
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20080301,
+						"ADate": null,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "OFF",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 0.0
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric"
+						},
+						"BDate": "     SUN",
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}, {
+						"Date": 20080303,
+						"ADate": 20080301,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "NTL",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": 3457500.0
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric"
+						},
+						"BDate": "     SUN",
+						"CDate": "     SUN",
+						"EventCal": null,
+						"EventBDRule": null
+					}]
+				},
+				"CmdtyQuoteType": null,
+				"INT_DIV_PayDividend": "RESET",
+				"INT_DIV_HedgeDivRatio": {
+					"TYPE": "Numeric",
+					"$": 0.0
+				},
+				"INT_RES_AuxDomain": null,
+				"SCHED_Pay_GapDRule": null,
+				"SCHED_Reset_GapDRule": null,
+				"AMORT_Sched_GapDRuleID": null,
+				"AMORT_DRuleID": null,
+				"INT_AVG_Gap": "      0D",
+				"INT_RES_NTL_Gap": "      0D",
+				"INT_RES_FX_Gap": "      0D",
+				"SCHED_Pay_Gap": "      0D",
+				"SCHED_Reset_Gap": "      0D",
+				"AMORT_Sched_Gap": null,
+				"INT_DIV_Gap": "      0D",
+				"ProductName": null,
+				"AccrualFactors": null,
+				"STUB_StartCal": "LON",
+				"STUB_EndCal": "LON",
+				"STUB_StartSource1": null,
+				"STUB_StartSource2": null,
+				"STUB_EndSource1": null,
+				"STUB_EndSource2": null,
+				"INT_InterimRound": null,
+				"INT_InterimRoundDP": {
+					"TYPE": "Numeric"
+				},
+				"INT_RES_ConvRound": null,
+				"INT_RES_ConvRoundDP": {
+					"TYPE": "Numeric"
+				},
+				"INT_RES_PaymentReset": "N",
+				"INT_RES_CutOffDays": {
+					"TYPE": "Numeric"
+				},
+				"INT_RES_NTL_PaymentReset": "N",
+				"INT_RES_NTL_CutOffDays": {
+					"TYPE": "Numeric"
+				},
+				"INT_RES_FX_PaymentReset": "N",
+				"INT_RES_FX_CutOffDays": {
+					"TYPE": "Numeric"
+				},
+				"INTEREST_OrgIndex": null,
+				"INTEREST_OrgCcy": null,
+				"INTEREST_OrgSource": null,
+				"OrigMatDate": null,
+				"GapDateRoll": null,
+				"INT_ACC_UseProj": null,
+				"FinNtlExchCal": null,
+				"FinCalAtPay": null,
+				"Deliverable": null,
+				"INT_RES_DorF": null,
+				"PayMethod": null,
+				"RedemFormula": {
+					"TYPE": "EntList",
+					"SINGLE": "N"
+				},
+				"RedemProductName": null,
+				"CfRound": null,
+				"CfRoundDP": {
+					"TYPE": "Numeric"
+				},
+				"INTEREST_Method": null,
+				"DENOM_Type": null,
+				"DENOM_Amount": {
+					"TYPE": "Numeric"
+				},
+				"DENOM_Round": null,
+				"DENOM_RoundDP": {
+					"TYPE": "Numeric"
+				},
+				"INT_ACC_RateType": null,
+				"LoanIntRule": null,
+				"LoanBasis": null,
+				"LoanRate": {
+					"TYPE": "Numeric",
+					"$": 0.0
+				},
+				"LoanStubType": null,
+				"LoanNtlAmortType": null,
+				"PayEvents": {
+					"TYPE": "EntList",
+					"SINGLE": "N"
+				},
+				"AdjFstXNL": null,
+				"FreqDecompType": null,
+				"FreqDecompFreq": null,
+				"StubFreqDecompType": null,
+				"StubFreqDecompFreq": null,
+				"STUB_IgnoreHalfPeriodRule": null,
+				"BusMatDate": "N",
+				"INTEREST_IntRateType": "FLT",
+				"ROLL_RolloverStatus": null,
+				"SIAsset": {
+					"TYPE": "EntList",
+					"SINGLE": "Y"
+				},
+				"NotionalDaysGap": null,
+				"NotionalGapDRuleID": null,
+				"UseIntPayGapRules": "Y",
+				"ProdData": {
+					"TYPE": "EntList",
+					"SINGLE": "Y"
+				},
+				"RedemProdData": {
+					"TYPE": "EntList",
+					"SINGLE": "Y"
+				}
+			}, {
+				"dmAssetId": "00045679",
+				"dmOwnerTable": "SWAP",
+				"TradeId": "123456LQ",
+				"SchedEvents": {
+					"TYPE": "EntList",
+					"SINGLE": "N"
+				},
+				"Type": "SWAP",
+				"SubType": "IRSWAP",
+				"RC": "TBC",
+				"Book": "LQBOOK",
+				"PorS": "S",
+				"EffDate": 20010301,
+				"MatDate": 20080301,
+				"Notional": {
+					"TYPE": "Numeric",
+					"$": 3457500.0
+				},
+				"NotExp": null,
+				"Ccy": "GBP",
+				"STUB_Date1": null,
+				"STUB_Rate1": {
+					"TYPE": "Numeric",
+					"$": 0.0
+				},
+				"STUB_Date2": null,
+				"STUB_Rate2": {
+					"TYPE": "Numeric",
+					"$": 0.0
+				},
+				"STUB_StubType": null,
+				"STUB_Decomp": "N",
+				"STUB_CompMode": null,
+				"STUB_Rounding": {
+					"TYPE": "Numeric"
+				},
+				"STUB_InterpStyle": "E",
+				"STUB_StartTerm1": null,
+				"STUB_StartTerm2": null,
+				"STUB_EndTerm1": null,
+				"STUB_EndTerm2": null,
+				"ResetInStub": "N",
+				"INTEREST_IndexForm": null,
+				"INTEREST_YldFreq": null,
+				"INTEREST_FixFloat": "FLO",
+				"INTEREST_Rate": {
+					"TYPE": "Numeric",
+					"$": 0.0
+				},
+				"INTEREST_Basis": "30\/360",
+				"INTEREST_dmIndex": "FORM",
+				"INTEREST_Ccy": "GBP",
+				"INT_REF_OrgSource": null,
+				"INT_REF_Source": "T3750",
+				"INT_REF_NNearBy": {
+					"TYPE": "Numeric",
+					"$": -200000
+				},
+				"INTEREST_Spread": {
+					"TYPE": "Numeric",
+					"$": 0.0
+				},
+				"INTEREST_Term": null,
+				"INT_AVG_Type": null,
+				"INT_AVG_Freq": null,
+				"INT_AVG_Compound": "N",
+				"INT_AVG_AnnDay": {
+					"TYPE": "Numeric",
+					"$": -200000
+				},
+				"INT_AVG_Rule": "MF",
+				"INT_AVG_Spread": null,
+				"INT_AVG_Time": null,
+				"INT_AVG_CutOffDays": {
+					"TYPE": "Numeric"
+				},
+				"INT_AVG_CorBGap": "B",
+				"INTEREST_DType": null,
+				"INTEREST_Round": null,
+				"INTEREST_RoundDP": {
+					"TYPE": "Numeric",
+					"$": -200000
+				},
+				"INT_RES_Rule": null,
+				"INT_RES_Time": null,
+				"INT_RES_Round": null,
+				"INT_RES_RoundDP": {
+					"TYPE": "Numeric"
+				},
+				"INT_RES_NTL_REF_OrgSource": null,
+				"INT_RES_NTL_REF_Source": null,
+				"INT_RES_NTL_REF_NNearBy": {
+					"TYPE": "Numeric",
+					"$": -200000
+				},
+				"INT_RES_NTL_Cal": null,
+				"INT_RES_NTL_Term": null,
+				"INT_RES_FX_REF_OrgSource": null,
+				"INT_RES_FX_REF_Source": null,
+				"INT_RES_FX_REF_NNearBy": {
+					"TYPE": "Numeric",
+					"$": -200000
+				},
+				"INT_RES_FX_Cal": null,
+				"INT_RES_FX_Term": null,
+				"INT_RES_FxDomain": null,
+				"INT_ACC_AccCalc": "N",
+				"INT_ACC_Method": null,
+				"INT_ACC_ForL": null,
+				"INT_ACC_Basis": "A365F",
+				"INTEREST_FwdDecomp": "N",
+				"INT_DIV_Ratio": {
+					"TYPE": "Numeric",
+					"$": 0.0
+				},
+				"INT_DIV_ReInvest": "N",
+				"INT_DIV_DivMethod": null,
+				"INTEREST_NRate": {
+					"TYPE": "Numeric",
+					"$": 0.0
+				},
+				"INTEREST_NonContig": "N",
+				"INTEREST_UnderIndex": null,
+				"SCHED_Pay_Freq": "Q",
+				"SCHED_Pay_AnnDay": {
+					"TYPE": "Numeric",
+					"$": 1
+				},
+				"SCHED_Pay_Rule": "MF",
+				"SCHED_Pay_IntRule": "N",
+				"SCHED_Pay_Time": "ARR",
+				"SCHED_Pay_Cal": "012",
+				"SCHED_Pay_DRule": null,
+				"SCHED_Reset_Freq": "Q",
+				"SCHED_Reset_AnnDay": {
+					"TYPE": "Numeric",
+					"$": 1
+				},
+				"SCHED_Reset_Rule": "MF",
+				"SCHED_Reset_IntRule": "N",
+				"SCHED_Reset_Time": "ADV",
+				"SCHED_Reset_Cal": "LON",
+				"SCHED_Reset_DRule": null,
+				"COMP_CompFreq": null,
+				"COMP_Mode": null,
+				"AMORT_Type": null,
+				"AMORT_Amount": {
+					"TYPE": "Numeric"
+				},
+				"AMORT_Start": null,
+				"AMORT_End": null,
+				"AMORT_Freq": null,
+				"Custom": "STND",
+				"CROSS_CCY_NotExch": null,
+				"CROSS_CCY_ForexRate": {
+					"TYPE": "Numeric",
+					"$": 0.0
+				},
+				"OptionData": "N",
+				"PModel": null,
+				"Style": null,
+				"OPForm": null,
+				"SubIndex": null,
+				"TermDate": null,
+				"ROLL_RollNature": null,
+				"ROLL_NoticeDays": {
+					"TYPE": "Numeric",
+					"$": -200000
+				},
+				"ROLL_ReInvestAmt": null,
+				"FstCpEffect": null,
+				"NextFixing": 20070903,
+				"RiskId": null,
+				"INT_AVG_Conversion": null,
+				"INT_RES_RefixMode": "AUTO",
+				"INT_AVG_CutOffMeth": null,
+				"Audit_Version": {
+					"TYPE": "Numeric",
+					"$": 58
+				},
+				"AMORT_NtlForm": null,
+				"AMORT_Sched_Freq": null,
+				"AMORT_Sched_AnnDay": {
+					"TYPE": "Numeric",
+					"$": -200000
+				},
+				"AMORT_Sched_Rule": null,
+				"AMORT_Sched_IntRule": null,
+				"AMORT_Sched_Time": null,
+				"AMORT_Sched_Cal": null,
+				"AMORT_Sched_DRuleID": null,
+				"INTEREST_FundIndex": null,
+				"INTEREST_FundSprd": {
+					"TYPE": "Numeric",
+					"$": 0.0
+				},
+				"MMType": null,
+				"LegRole": "ALL",
+				"GroupNum": {
+					"TYPE": "Numeric",
+					"$": -200000
+				},
+				"NumEve": {
+					"TYPE": "Numeric",
+					"$": 1
+				},
+				"Formula": {
+					"TYPE": "EntList",
+					"SINGLE": "N",
+					"FORMULA": [{
+						"Date": 20010301,
+						"FormulaId": null,
+						"Formula": {
+							"TYPE": "ObjRef",
+							"$": "( 1 + 0.028 ) ^ 5 - 1"
+						},
+						"RedempType": null
+					}, {
+						"Date": 20020301,
+						"FormulaId": null,
+						"Formula": {
+							"TYPE": "ObjRef",
+							"$": "( 1 + 0.028 ) ^ 6 - 1"
+						},
+						"RedempType": null
+					}, {
+						"Date": 20030301,
+						"FormulaId": null,
+						"Formula": {
+							"TYPE": "ObjRef",
+							"$": "( 1 + 0.028 ) ^ 7 - 1"
+						},
+						"RedempType": null
+					}, {
+						"Date": 20040301,
+						"FormulaId": null,
+						"Formula": {
+							"TYPE": "ObjRef",
+							"$": "( 1 + 0.028 ) ^ 8 - 1"
+						},
+						"RedempType": null
+					}, {
+						"Date": 20050301,
+						"FormulaId": null,
+						"Formula": {
+							"TYPE": "ObjRef",
+							"$": "( 1 + 0.028 ) ^ 9 - 1"
+						},
+						"RedempType": null
+					}, {
+						"Date": 20060301,
+						"FormulaId": null,
+						"Formula": {
+							"TYPE": "ObjRef",
+							"$": "( 1 + 0.028 ) ^ 10 - 1"
+						},
+						"RedempType": null
+					}, {
+						"Date": 20070301,
+						"FormulaId": null,
+						"Formula": {
+							"TYPE": "ObjRef",
+							"$": "( 1 + 0.028 ) ^ 11 - 1"
+						},
+						"RedempType": null
+					}]
+				},
+				"Events": {
+					"TYPE": "EntList",
+					"SINGLE": "N",
+					"EVENT": {
+						"Date": 19991221,
+						"ADate": 19991221,
+						"LinkEv": {
+							"TYPE": "Numeric"
+						},
+						"Type": "FEE",
+						"Ccy": "GBP",
+						"Amount": {
+							"TYPE": "Numeric",
+							"$": -358000.0
+						},
+						"RiskId": null,
+						"EvStyle": {
+							"TYPE": "Numeric"
+						},
+						"BDate": 20010301,
+						"CDate": 20080301,
+						"EventCal": null,
+						"EventBDRule": null
+					}
+				},
+				"INT_DIV_PayDividend": "RESET",
+				"INT_DIV_HedgeDivRatio": {
+					"TYPE": "Numeric",
+					"$": 0.0
+				},
+				"INT_RES_AuxDomain": null,
+				"SCHED_Pay_GapDRule": null,
+				"SCHED_Reset_GapDRule": null,
+				"AMORT_Sched_GapDRuleID": null,
+				"AMORT_DRuleID": null,
+				"INT_AVG_Gap": "      0D",
+				"INT_RES_NTL_Gap": "      0D",
+				"INT_RES_FX_Gap": "      0D",
+				"SCHED_Pay_Gap": "      0D",
+				"SCHED_Reset_Gap": "      0D",
+				"AMORT_Sched_Gap": null,
+				"INT_DIV_Gap": "      0D",
+				"ProductName": null,
+				"AccrualFactors": null,
+				"STUB_StartCal": "LON",
+				"STUB_EndCal": "LON",
+				"STUB_StartSource1": null,
+				"STUB_StartSource2": null,
+				"STUB_EndSource1": null,
+				"STUB_EndSource2": null,
+				"INT_InterimRound": null,
+				"INT_InterimRoundDP": {
+					"TYPE": "Numeric"
+				},
+				"INT_RES_ConvRound": null,
+				"INT_RES_ConvRoundDP": {
+					"TYPE": "Numeric"
+				},
+				"INT_RES_PaymentReset": "N",
+				"INT_RES_CutOffDays": {
+					"TYPE": "Numeric"
+				},
+				"INT_RES_NTL_PaymentReset": "N",
+				"INT_RES_NTL_CutOffDays": {
+					"TYPE": "Numeric"
+				},
+				"INT_RES_FX_PaymentReset": "N",
+				"INT_RES_FX_CutOffDays": {
+					"TYPE": "Numeric"
+				},
+				"INTEREST_OrgIndex": null,
+				"INTEREST_OrgCcy": null,
+				"INTEREST_OrgSource": null,
+				"OrigMatDate": null,
+				"GapDateRoll": null,
+				"INT_ACC_UseProj": null,
+				"FinNtlExchCal": null,
+				"FinCalAtPay": null,
+				"Deliverable": null,
+				"INT_RES_DorF": null,
+				"PayMethod": null,
+				"RedemFormula": {
+					"TYPE": "EntList",
+					"SINGLE": "N"
+				},
+				"RedemProductName": null,
+				"CfRound": null,
+				"CfRoundDP": {
+					"TYPE": "Numeric"
+				},
+				"INTEREST_Method": null,
+				"DENOM_Type": null,
+				"DENOM_Amount": {
+					"TYPE": "Numeric"
+				},
+				"DENOM_Round": null,
+				"DENOM_RoundDP": {
+					"TYPE": "Numeric"
+				},
+				"INT_ACC_RateType": null,
+				"LoanIntRule": null,
+				"LoanBasis": null,
+				"LoanRate": {
+					"TYPE": "Numeric",
+					"$": 0.0
+				},
+				"LoanStubType": null,
+				"LoanNtlAmortType": null,
+				"PayEvents": {
+					"TYPE": "EntList",
+					"SINGLE": "N"
+				},
+				"AdjFstXNL": null,
+				"FreqDecompType": null,
+				"FreqDecompFreq": null,
+				"StubFreqDecompType": null,
+				"StubFreqDecompFreq": null,
+				"STUB_IgnoreHalfPeriodRule": null,
+				"BusMatDate": "N",
+				"INTEREST_IntRateType": "FLT",
+				"ROLL_RolloverStatus": null,
+				"SIAsset": {
+					"TYPE": "EntList",
+					"SINGLE": "Y"
+				},
+				"NotionalDaysGap": null,
+				"NotionalGapDRuleID": null,
+				"UseIntPayGapRules": "Y",
+				"ProdData": {
+					"TYPE": "EntList",
+					"SINGLE": "Y"
+				},
+				"RedemProdData": {
+					"TYPE": "EntList",
+					"SINGLE": "Y"
+				}
+			}]
+		},
+		"SDTradeLink": {
+			"TYPE": "EntList",
+			"SINGLE": "Y"
+		},
+		"Break": {
+			"TYPE": "EntList",
+			"SINGLE": "Y",
+			"BREAK": {
+				"TradeId": "123456LQ",
+				"dmOwnerTable": "SWAP",
+				"OptionOwner": "MUTUAL",
+				"ExpStyle": "BERM",
+				"ExpDate": 20080303,
+				"FirstExpDate": 20010301,
+				"Notes": "PAY LEG RPI BASED FOR PAYMENTS",
+				"NoticePeriod": {
+					"TYPE": "EntList",
+					"SINGLE": "N"
+				}
+			}
+		},
+		"TradeCorpActList": {
+			"TYPE": "EntList",
+			"SINGLE": "N"
+		}
+	}
+}

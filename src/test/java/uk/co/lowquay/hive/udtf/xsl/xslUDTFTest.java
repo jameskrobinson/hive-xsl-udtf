@@ -20,7 +20,7 @@ import org.apache.hadoop.hive.serde2.objectinspector.primitive.PrimitiveObjectIn
 import org.apache.hadoop.hive.serde2.typeinfo.TypeInfoFactory;
 
 import org.apache.hadoop.io.Text;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 import org.apache.hive.com.esotericsoftware.kryo.Kryo;
 import org.apache.hive.com.esotericsoftware.kryo.io.Input;

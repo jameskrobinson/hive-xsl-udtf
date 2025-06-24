@@ -1,6 +1,16 @@
 hive-xsl-udtf
 ============
 
+Note to self:
+Might need to add:
+export HADOOP_CLIENT_OPTS="--add-opens java.base/java.net=ALL-UNNAMED $HADOOP_CLIENT_OPTS"
+or
+--add-opens java.base/java.net=ALL-UNNAMED
+To JVM options
+
+For intellij : Open Run/debug Configurations > Create an application for your file if its already not there > Add VM Option > add this config in VM "--add-opens java. Base/java.net=ALL-UNNAMED"
+
+
 Transform XML into tabular data dynamically in Hive.
 
 Note, this project is a fork of hive-jq-udtf, which is Copyright (c) CyberAgent, Inc. All Rights Reserved.
